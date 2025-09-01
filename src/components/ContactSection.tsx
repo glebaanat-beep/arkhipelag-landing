@@ -105,7 +105,7 @@ export function ContactSection() {
             <div className="bg-card rounded-2xl overflow-hidden luxury-shadow">
               <div className="h-64 relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.90089160626!2d100.39106825629577!3d13.724546613166204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok%2C%20Thailand!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4567392847567!2d98.28759731477394!3d8.012345823193765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031bb10f4a4ef%3A0x123456789!2s63%2C%20202%20Thepkasattri%20Rd%2C%20Ko%20Kaeo%2C%20Mueang%20Phuket%20District%2C%20Phuket%2083000%2C%20Thailand!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
