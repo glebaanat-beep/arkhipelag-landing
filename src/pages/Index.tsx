@@ -29,8 +29,9 @@ const Index = () => {
                 ARKHIPELAG
               </div>
               
-              {/* Address Information */}
-              <div className="text-text-muted text-sm max-w-2xl mx-auto">
+              {/* Tax ID and Address Information */}
+              <div className="text-text-muted text-sm max-w-2xl mx-auto space-y-2">
+                <p><span className="font-medium">Tax ID:</span> 0835566018842</p>
                 <p><span className="font-medium">Address:</span> 63/202 Moo 2, Thepkasattri Rd, Muang Phuket District, Phuket 83000, Thailand</p>
               </div>
             </div>
