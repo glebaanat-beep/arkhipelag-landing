@@ -8,6 +8,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { useLanguage } from '../contexts/LanguageContext';
 import { useToast } from '../hooks/use-toast';
 
+// Import Thailand map
+import thailandMapImage from '../assets/thailand-map.jpg';
+
 export function ContactSection() {
   const { t } = useLanguage();
   const { toast } = useToast();
@@ -103,8 +106,30 @@ export function ContactSection() {
             
             {/* Description */}
             <div className="bg-card rounded-2xl p-8 luxury-shadow">
-              <p className="text-text-secondary text-lg leading-relaxed">
+              <p className="text-text-secondary text-lg leading-relaxed mb-6">
                 {t('contact.description')}
+              </p>
+            </div>
+            
+            {/* Thailand Map */}
+            <div className="bg-card rounded-2xl p-8 luxury-shadow relative overflow-hidden">
+              <h4 className="font-heading text-xl font-bold mb-4 text-text-primary">
+                Our Location
+              </h4>
+              <div className="relative">
+                <img 
+                  src={thailandMapImage} 
+                  alt="Thailand Map" 
+                  className="w-full h-48 object-contain rounded-lg opacity-80"
+                />
+                {/* Gold Pin for Phuket */}
+                <div className="absolute bottom-8 left-1/3 transform -translate-x-1/2">
+                  <div className="w-4 h-4 bg-luxury-gold rounded-full animate-pulse shadow-lg"></div>
+                  <div className="w-2 h-2 bg-luxury-gold-bright rounded-full absolute top-1 left-1"></div>
+                </div>
+              </div>
+              <p className="text-text-muted text-sm mt-3 text-center">
+                Regus - Royal Phuket Marina, Phuket
               </p>
             </div>
           </div>

@@ -38,6 +38,12 @@ export function Navigation() {
               {t('nav.services')}
             </button>
             <button 
+              onClick={() => scrollToSection('process')}
+              className="text-text-secondary hover:text-luxury-gold transition-colors duration-300"
+            >
+              {t('nav.process')}
+            </button>
+            <button 
               onClick={() => scrollToSection('testimonials')}
               className="text-text-secondary hover:text-luxury-gold transition-colors duration-300"
             >
@@ -95,6 +101,12 @@ export function Navigation() {
                 className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300"
               >
                 {t('nav.services')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('process')}
+                className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300"
+              >
+                {t('nav.process')}
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}

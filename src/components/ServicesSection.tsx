@@ -102,13 +102,45 @@ export function ServicesSection() {
               
               {/* Content Side */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-6 text-luxury-gold">
-                  {t(services[activeService].titleKey)}
+                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-luxury-gold">
+                  {t(services[activeService].titleKey + '.headline')}
                 </h3>
                 
-                <p className="text-text-secondary leading-relaxed text-lg">
+                <h4 className="font-heading text-xl font-semibold mb-4 text-text-primary">
+                  {t(services[activeService].titleKey)}
+                </h4>
+                
+                <p className="text-text-secondary leading-relaxed text-lg mb-6">
                   {t(services[activeService].descriptionKey)}
                 </p>
+                
+                {/* Our offering includes */}
+                <div className="mb-6">
+                  <h5 className="font-semibold text-text-primary mb-3">Our offering includes:</h5>
+                  <ul className="space-y-2">
+                    {[1, 2, 3, 4].map((num) => (
+                      <li key={num} className="flex items-start text-text-secondary">
+                        <div className="w-1.5 h-1.5 bg-luxury-gold rounded-full mt-2 mr-3 flex-shrink-0" />
+                        {t(services[activeService].titleKey.replace('.title', '.offering' + num))}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                {/* CTA Link */}
+                <div>
+                  <button
+                    onClick={() => {
+                      const contactSection = document.getElementById('contact');
+                      if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-luxury-gold hover:text-luxury-gold-bright transition-colors duration-300 font-medium text-sm"
+                  >
+                    {t('services.cta')}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
