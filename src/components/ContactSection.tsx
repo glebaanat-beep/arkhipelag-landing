@@ -92,15 +92,7 @@ export function ContactSection() {
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-luxury-gold rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-background" />
-                </div>
-                <div>
-                  <p className="text-text-muted text-sm">{t('contact.info.telegram')}</p>
-                  <p className="text-text-primary font-medium">@arkhipelag_concierge</p>
-                </div>
-              </div>
+              
             </div>
             
             {/* Description */}
