@@ -68,7 +68,7 @@ export function ContactSection() {
           {/* Contact Information */}
           <div>
             <h3 className="font-heading text-2xl font-bold mb-8 text-text-primary">
-              Contact Information
+              {t('contact.info.title')}
             </h3>
             
             <div className="space-y-6 mb-8">
