@@ -29,18 +29,9 @@ const Index = () => {
                 ARKHIPELAG
               </div>
               
-              {/* Legal Information */}
-              <div className="space-y-2 text-text-muted text-sm max-w-2xl mx-auto">
-                <div className="grid md:grid-cols-2 gap-4 text-left">
-                  <div>
-                    <p><span className="font-medium">Tax ID:</span> 0835566018842</p>
-                    <p><span className="font-medium">Bank Account:</span> ARKHIPELAG COMPANY LIMITED</p>
-                  </div>
-                  <div>
-                    <p><span className="font-medium">Bank:</span> Siam Commercial Bank PCL</p>
-                    <p><span className="font-medium">Branch:</span> Phuket Branch</p>
-                  </div>
-                </div>
+              {/* Address Information */}
+              <div className="text-text-muted text-sm max-w-2xl mx-auto">
+                <p><span className="font-medium">Address:</span> 63/202 Moo 2, Thepkasattri Rd, Muang Phuket District, Phuket 83000, Thailand</p>
               </div>
             </div>
             
