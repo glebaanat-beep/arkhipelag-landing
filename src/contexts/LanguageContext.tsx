@@ -91,7 +91,7 @@ const translations: Translations = {
     'process.step1.description': 'We discuss your needs, preferences, and context in detail.',
     'process.step2.title': 'Tailored Solution',
     'process.step2.description': 'We present several curated options that fit your request and budget.',
-    'process.step3.title': 'Transparent Quote & Deposit',
+    'process.step3.title': 'Quote & Deposit',
     'process.step3.description': 'We confirm all details and provide a fixed price. A deposit is required to proceed.',
     'process.step4.title': 'Execution & Support',
     'process.step4.description': 'We handle everything and provide 24/7 support throughout your experience.',
