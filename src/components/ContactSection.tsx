@@ -101,21 +101,11 @@ export function ContactSection() {
               </div>
             </div>
             
-            {/* Map */}
-            <div className="bg-card rounded-2xl overflow-hidden luxury-shadow">
-              <div className="h-64 relative">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4567392847567!2d98.28759731477394!3d8.012345823193765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031bb10f4a4ef%3A0x123456789!2s63%2C%20202%20Thepkasattri%20Rd%2C%20Ko%20Kaeo%2C%20Mueang%20Phuket%20District%2C%20Phuket%2083000%2C%20Thailand!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="grayscale hover:grayscale-0 transition-all duration-500"
-                />
-                <div className="absolute inset-0 bg-luxury-gold/10 hover:bg-transparent transition-all duration-500" />
-              </div>
+            {/* Description */}
+            <div className="bg-card rounded-2xl p-8 luxury-shadow">
+              <p className="text-text-secondary text-lg leading-relaxed">
+                {t('contact.description')}
+              </p>
             </div>
           </div>
           
