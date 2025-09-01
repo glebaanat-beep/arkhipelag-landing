@@ -19,24 +19,28 @@ const experiences = [
     id: 'yacht',
     image: yachtSunsetImage,
     titleKey: 'experiences.yacht.title',
+    descriptionKey: 'experiences.yacht.description',
     buttonKey: 'experiences.yacht.button',
   },
   {
     id: 'gourmet',
     image: gourmetDinnerImage,
     titleKey: 'experiences.gourmet.title',
+    descriptionKey: 'experiences.gourmet.description',
     buttonKey: 'experiences.gourmet.button',
   },
   {
     id: 'business',
     image: businessLuxuryImage,
     titleKey: 'experiences.business.title',
+    descriptionKey: 'experiences.business.description',
     buttonKey: 'experiences.business.button',
   },
   {
     id: 'family',
     image: familyLuxuryImage,
     titleKey: 'experiences.family.title',
+    descriptionKey: 'experiences.family.description',
     buttonKey: 'experiences.family.button',
   },
 ];
@@ -90,14 +94,19 @@ export function CuratedExperiencesSection() {
                     
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-8">
-                      <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mb-6 transform transition-transform duration-500 group-hover:-translate-y-2">
+                      <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 transform transition-transform duration-500 group-hover:-translate-y-2">
                         {t(experience.titleKey)}
                       </h3>
+                      
+                      {/* Description - hidden by default, shows on hover */}
+                      <p className="text-white/90 text-sm md:text-base leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-75 max-w-md">
+                        {t(experience.descriptionKey)}
+                      </p>
                       
                       {/* Button - hidden by default, shows on hover */}
                       <Button
                         onClick={scrollToContact}
-                        className="w-fit bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold px-8 py-3 rounded-md opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 gold-shadow"
+                        className="w-fit bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold px-8 py-3 rounded-md opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150 gold-shadow"
                       >
                         {t(experience.buttonKey)}
                       </Button>

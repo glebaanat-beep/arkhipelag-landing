@@ -115,12 +115,16 @@ const translations: Translations = {
     'experiences.title': 'Curated Experiences',
     'experiences.subtitle': 'Discover bespoke lifestyle scenarios crafted exclusively for you',
     'experiences.yacht.title': 'The Ultimate Island Escape',
+    'experiences.yacht.description': 'Private yacht charters to hidden lagoons, exclusive villa accommodations, and personalized island-hopping itineraries in complete privacy.',
     'experiences.yacht.button': 'Discover',
     'experiences.gourmet.title': 'The Gastronomic Journey',
+    'experiences.gourmet.description': 'Access to Michelin-starred venues, private chef experiences, and curated culinary tours through Thailand\'s most exclusive dining scenes.',
     'experiences.gourmet.button': 'Explore',
     'experiences.business.title': 'The Business Catalyst',
+    'experiences.business.description': 'Premium transportation solutions, discreet meeting arrangements, and high-profile event hosting for important business engagements.',
     'experiences.business.button': 'Learn More',
     'experiences.family.title': 'The Family Legacy',
+    'experiences.family.description': 'Tailored family adventures, educational cultural experiences, and luxury accommodations designed for multi-generational travel.',
     'experiences.family.button': 'Explore',
     
     // Contact
@@ -242,12 +246,16 @@ const translations: Translations = {
     'experiences.title': 'Кураторские Впечатления',
     'experiences.subtitle': 'Откройте для себя эксклюзивные сценарии образа жизни, созданные специально для вас',
     'experiences.yacht.title': 'Идеальный Островной Побег',
+    'experiences.yacht.description': 'Частные чартеры яхт к скрытым лагунам, эксклюзивное размещение в виллах и персонализированные маршруты по островам в полной конфиденциальности.',
     'experiences.yacht.button': 'Открыть',
     'experiences.gourmet.title': 'Гастрономическое Путешествие',
+    'experiences.gourmet.description': 'Доступ к мишленовским заведениям, услуги частных поваров и кураторские кулинарные туры по самым эксклюзивным местам Таиланда.',
     'experiences.gourmet.button': 'Исследовать',
     'experiences.business.title': 'Бизнес-Катализатор',
+    'experiences.business.description': 'Премиальные транспортные решения, дискретная организация встреч и проведение высокопрофильных мероприятий для важных бизнес-событий.',
     'experiences.business.button': 'Узнать больше',
     'experiences.family.title': 'Семейное Наследие',
+    'experiences.family.description': 'Индивидуальные семейные приключения, образовательные культурные впечатления и роскошное размещение для многопоколенческих путешествий.',
     'experiences.family.button': 'Исследовать',
     
     // Contact
