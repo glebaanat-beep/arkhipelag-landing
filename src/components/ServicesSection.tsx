@@ -6,7 +6,7 @@ import luxuryCarsImage from '../assets/luxury-cars.jpg';
 import yachtRentalImage from '../assets/yacht-rental.jpg';
 import realEstateImage from '../assets/real-estate.jpg';
 import shoppingConciergeImage from '../assets/shopping-concierge.jpg';
-import premiumToursImage from '../assets/premium-tours.jpg';
+import thaiTempleImage from '../assets/thai-temple.jpg';
 import exclusiveEventsImage from '../assets/exclusive-events.jpg';
 
 interface Service {
@@ -43,7 +43,7 @@ const services: Service[] = [
   },
   {
     id: 'tours',
-    image: premiumToursImage,
+    image: thaiTempleImage,
     titleKey: 'services.tours.title',
     descriptionKey: 'services.tours.description',
   },
