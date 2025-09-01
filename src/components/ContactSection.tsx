@@ -10,50 +10,49 @@ import { useToast } from '../hooks/use-toast';
 
 // Import Thailand map
 import thailandMapImage from '../assets/thailand-map.jpg';
-
 export function ContactSection() {
-  const { t } = useLanguage();
-  const { toast } = useToast();
+  const {
+    t
+  } = useLanguage();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     salutation: '',
     firstName: '',
     surname: '',
     phone: '',
-    message: '',
+    message: ''
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.firstName || !formData.surname || !formData.phone || !formData.message) {
       toast({
         title: "Please fill in all fields",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
 
     // Here you would typically send the data to your backend
     console.log('Form submitted:', formData);
-    
     toast({
       title: "Thank you for your inquiry",
-      description: "We will contact you within 24 hours.",
+      description: "We will contact you within 24 hours."
     });
-    
+
     // Reset form
     setFormData({
       salutation: '',
       firstName: '',
       surname: '',
       phone: '',
-      message: '',
+      message: ''
     });
   };
-
-  return (
-    <section id="contact" className="py-20 bg-background">
+  return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-text-primary">
@@ -112,26 +111,7 @@ export function ContactSection() {
             </div>
             
             {/* Thailand Map */}
-            <div className="bg-card rounded-2xl p-8 luxury-shadow relative overflow-hidden">
-              <h4 className="font-heading text-xl font-bold mb-4 text-text-primary">
-                Our Location
-              </h4>
-              <div className="relative">
-                <img 
-                  src={thailandMapImage} 
-                  alt="Thailand Map" 
-                  className="w-full h-48 object-contain rounded-lg opacity-80"
-                />
-                {/* Gold Pin for Phuket */}
-                <div className="absolute bottom-8 left-1/3 transform -translate-x-1/2">
-                  <div className="w-4 h-4 bg-luxury-gold rounded-full animate-pulse shadow-lg"></div>
-                  <div className="w-2 h-2 bg-luxury-gold-bright rounded-full absolute top-1 left-1"></div>
-                </div>
-              </div>
-              <p className="text-text-muted text-sm mt-3 text-center">
-                Regus - Royal Phuket Marina, Phuket
-              </p>
-            </div>
+            
           </div>
           
           {/* Contact Form */}
@@ -140,10 +120,10 @@ export function ContactSection() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="salutation">{t('contact.form.salutation')}</Label>
-                  <Select
-                    value={formData.salutation}
-                    onValueChange={(value) => setFormData(prev => ({ ...prev, salutation: value }))}
-                  >
+                  <Select value={formData.salutation} onValueChange={value => setFormData(prev => ({
+                  ...prev,
+                  salutation: value
+                }))}>
                     <SelectTrigger className="bg-input border-input-border">
                       <SelectValue placeholder="Select..." />
                     </SelectTrigger>
@@ -157,61 +137,43 @@ export function ContactSection() {
                 
                 <div className="space-y-2">
                   <Label htmlFor="firstName">{t('contact.form.firstname')}</Label>
-                  <Input
-                    id="firstName"
-                    value={formData.firstName}
-                    onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
-                    className="bg-input border-input-border"
-                    required
-                  />
+                  <Input id="firstName" value={formData.firstName} onChange={e => setFormData(prev => ({
+                  ...prev,
+                  firstName: e.target.value
+                }))} className="bg-input border-input-border" required />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="surname">{t('contact.form.surname')}</Label>
-                <Input
-                  id="surname"
-                  value={formData.surname}
-                  onChange={(e) => setFormData(prev => ({ ...prev, surname: e.target.value }))}
-                  className="bg-input border-input-border"
-                  required
-                />
+                <Input id="surname" value={formData.surname} onChange={e => setFormData(prev => ({
+                ...prev,
+                surname: e.target.value
+              }))} className="bg-input border-input-border" required />
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="phone">{t('contact.form.phone')}</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                  className="bg-input border-input-border"
-                  required
-                />
+                <Input id="phone" type="tel" value={formData.phone} onChange={e => setFormData(prev => ({
+                ...prev,
+                phone: e.target.value
+              }))} className="bg-input border-input-border" required />
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="message">{t('contact.form.message')}</Label>
-                <Textarea
-                  id="message"
-                  value={formData.message}
-                  onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                  className="bg-input border-input-border min-h-32"
-                  required
-                />
+                <Textarea id="message" value={formData.message} onChange={e => setFormData(prev => ({
+                ...prev,
+                message: e.target.value
+              }))} className="bg-input border-input-border min-h-32" required />
               </div>
               
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-background font-semibold gold-shadow transition-all duration-300"
-              >
+              <Button type="submit" size="lg" className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-background font-semibold gold-shadow transition-all duration-300">
                 {t('contact.form.submit')}
               </Button>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
