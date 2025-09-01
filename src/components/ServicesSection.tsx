@@ -102,13 +102,9 @@ export function ServicesSection() {
               
               {/* Content Side */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-luxury-gold">
-                  {t(services[activeService].titleKey + '.headline')}
-                </h3>
-                
-                <h4 className="font-heading text-xl font-semibold mb-4 text-text-primary">
+                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-6 text-luxury-gold">
                   {t(services[activeService].titleKey)}
-                </h4>
+                </h3>
                 
                 <p className="text-text-secondary leading-relaxed text-lg mb-6">
                   {t(services[activeService].descriptionKey)}
