@@ -111,6 +111,18 @@ const translations: Translations = {
     'testimonials.4.name': 'Sofia Martinelli',
     'testimonials.4.title': 'Fashion Executive',
     
+    // Curated Experiences section
+    'experiences.title': 'Curated Experiences',
+    'experiences.subtitle': 'Discover bespoke lifestyle scenarios crafted exclusively for you',
+    'experiences.yacht.title': 'The Ultimate Island Escape',
+    'experiences.yacht.button': 'Discover',
+    'experiences.gourmet.title': 'The Gastronomic Journey',
+    'experiences.gourmet.button': 'Explore',
+    'experiences.business.title': 'The Business Catalyst',
+    'experiences.business.button': 'Learn More',
+    'experiences.family.title': 'The Family Legacy',
+    'experiences.family.button': 'Explore',
+    
     // Contact
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Experience the pinnacle of luxury concierge services',
@@ -225,6 +237,18 @@ const translations: Translations = {
     'testimonials.4.text': 'Дискретность и совершенство определяют ARKHIPELAG. Они провели наше высокопрофильное мероприятие с таким профессионализмом, что наши гости все еще говорят о нем спустя месяцы. Просто непревзойденный сервис.',
     'testimonials.4.name': 'София Мартинелли',
     'testimonials.4.title': 'Руководитель модного бизнеса',
+    
+    // Curated Experiences section
+    'experiences.title': 'Кураторские Впечатления',
+    'experiences.subtitle': 'Откройте для себя эксклюзивные сценарии образа жизни, созданные специально для вас',
+    'experiences.yacht.title': 'Идеальный Островной Побег',
+    'experiences.yacht.button': 'Открыть',
+    'experiences.gourmet.title': 'Гастрономическое Путешествие',
+    'experiences.gourmet.button': 'Исследовать',
+    'experiences.business.title': 'Бизнес-Катализатор',
+    'experiences.business.button': 'Узнать больше',
+    'experiences.family.title': 'Семейное Наследие',
+    'experiences.family.button': 'Исследовать',
     
     // Contact
     'contact.title': 'Свяжитесь с нами',
