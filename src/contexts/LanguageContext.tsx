@@ -245,7 +245,7 @@ const translations: Translations = {
     // Curated Experiences section
     'experiences.title': 'Кураторские Впечатления',
     'experiences.subtitle': 'Откройте для себя эксклюзивные сценарии образа жизни, созданные специально для вас',
-    'experiences.yacht.title': 'Идеальный Островной Побег',
+    'experiences.yacht.title': 'Идеальный Побег с Острова',
     'experiences.yacht.description': 'Частные чартеры яхт к скрытым лагунам, эксклюзивное размещение в виллах и персонализированные маршруты по островам в полной конфиденциальности.',
     'experiences.yacht.button': 'Открыть',
     'experiences.gourmet.title': 'Гастрономическое Путешествие',
