@@ -40,7 +40,7 @@ export function ContactSection() {
     console.log('Form submitted:', formData);
     toast({
       title: "Thank you for your inquiry",
-      description: "We will contact you within 24 hours."
+      description: "We will contact you shortly."
     });
 
     // Reset form
@@ -88,10 +88,26 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-text-muted text-sm">{t('contact.info.phone')}</p>
-                  <p className="text-text-primary font-medium">+66 80 704 9200</p>
+                  <p className="text-text-primary font-medium">+66622213911</p>
                 </div>
               </div>
               
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-luxury-gold rounded-lg flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-background" />
+                </div>
+                <div>
+                  <p className="text-text-muted text-sm">{t('contact.info.telegram')}</p>
+                  <a 
+                    href="https://t.me/Arkhipelag_llc" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-primary font-medium hover:text-luxury-gold transition-colors"
+                  >
+                    @Arkhipelag_llc
+                  </a>
+                </div>
+              </div>
               
             </div>
             
