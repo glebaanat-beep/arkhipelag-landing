@@ -142,7 +142,7 @@ const translations: Translations = {
     'contact.info.title': 'Contact Information',
     'contact.info.email': 'Email',
     'contact.info.phone': 'Phone',
-    'contact.info.telegram': 'Telegram Channel',
+    'contact.info.telegram': 'Telegram',
     'contact.description': 'Ready to experience Thailand\'s finest luxury services? Contact our team to begin crafting your bespoke experience.',
     'contact.form.privacyConsent.text': 'I agree to the processing of my personal data in accordance with the',
     'contact.form.privacyConsent.link': 'Privacy Policy',
