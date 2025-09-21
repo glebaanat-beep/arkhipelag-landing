@@ -164,11 +164,11 @@ export default function ExperiencesCatalog() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <Tabs defaultValue="cultural" className="w-full">
-              <TabsList className="grid w-full grid-cols-4 max-w-4xl mx-auto mb-12">
-                <TabsTrigger value="cultural">{t('catalog.tab.cultural')}</TabsTrigger>
-                <TabsTrigger value="sea">{t('catalog.tab.sea')}</TabsTrigger>
-                <TabsTrigger value="adventure">{t('catalog.tab.adventure')}</TabsTrigger>
-                <TabsTrigger value="extreme">{t('catalog.tab.extreme')}</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-4 max-w-4xl mx-auto mb-12 bg-surface-elevated border border-border p-2 rounded-xl shadow-lg">
+                <TabsTrigger value="cultural" className="text-sm font-semibold py-3 px-4 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300">{t('catalog.tab.cultural')}</TabsTrigger>
+                <TabsTrigger value="sea" className="text-sm font-semibold py-3 px-4 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300">{t('catalog.tab.sea')}</TabsTrigger>
+                <TabsTrigger value="adventure" className="text-sm font-semibold py-3 px-4 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300">{t('catalog.tab.adventure')}</TabsTrigger>
+                <TabsTrigger value="extreme" className="text-sm font-semibold py-3 px-4 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300">{t('catalog.tab.extreme')}</TabsTrigger>
               </TabsList>
 
               {/* Cultural Tab */}
