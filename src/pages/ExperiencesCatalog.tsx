@@ -164,7 +164,7 @@ export default function ExperiencesCatalog() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <Tabs defaultValue="cultural" className="w-full">
-              <TabsList className="grid grid-cols-4 w-fit mx-auto mb-12 bg-surface-elevated border border-border p-1.5 rounded-xl shadow-lg gap-1">
+              <TabsList className="grid grid-cols-4 w-96 mx-auto mb-12 bg-surface-elevated border border-border p-1.5 rounded-xl shadow-lg gap-1">
                 <TabsTrigger value="cultural" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.cultural')}</TabsTrigger>
                 <TabsTrigger value="sea" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.sea')}</TabsTrigger>
                 <TabsTrigger value="adventure" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.adventure')}</TabsTrigger>
