@@ -13,6 +13,11 @@ export function Navigation() {
   const location = useLocation();
   const navigate = useNavigate();
   const isOnCatalog = location.pathname === '/experiences-catalog';
+  const handleExperiencesClick = () => {
+    navigate('/experiences-catalog');
+    setIsOpen(false);
+  };
+
   const scrollToSection = (sectionId: string) => {
     if (isOnCatalog) {
       // Navigate to home with anchor
@@ -55,8 +60,8 @@ export function Navigation() {
             <button onClick={() => scrollToSection('process')} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
               {t('nav.process')}
             </button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
-              {t('nav.testimonials')}
+            <button onClick={handleExperiencesClick} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
+              {t('nav.experiences')}
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
               {t('nav.contact')}
@@ -93,8 +98,8 @@ export function Navigation() {
               <button onClick={() => scrollToSection('process')} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
                 {t('nav.process')}
               </button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
-                {t('nav.testimonials')}
+              <button onClick={handleExperiencesClick} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
+                {t('nav.experiences')}
               </button>
               <button onClick={() => scrollToSection('contact')} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
                 {t('nav.contact')}
