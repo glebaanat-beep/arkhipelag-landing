@@ -1,5 +1,6 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 import {
   Carousel,
   CarouselContent,
@@ -8,52 +9,49 @@ import {
   CarouselPrevious,
 } from './ui/carousel';
 
-// Import the experience images
-import yachtSunsetImage from '../assets/experience-yacht-sunset.jpg';
-import gourmetDinnerImage from '../assets/experience-gourmet-dinner.jpg';
-import businessLuxuryImage from '../assets/experience-business-luxury.jpg';
-import familyLuxuryImage from '../assets/experience-family-luxury.jpg';
+// Import the category images
+import culturalImage from '../assets/category-cultural.jpg';
+import seaImage from '../assets/category-sea.jpg';
+import adventureImage from '../assets/category-adventure.jpg';
+import extremeImage from '../assets/category-extreme.jpg';
 
 const experiences = [
   {
-    id: 'yacht',
-    image: yachtSunsetImage,
-    titleKey: 'experiences.yacht.title',
-    descriptionKey: 'experiences.yacht.description',
-    buttonKey: 'experiences.yacht.button',
+    id: 'cultural',
+    image: culturalImage,
+    titleKey: 'experiences.cultural.title',
+    descriptionKey: 'experiences.cultural.description',
+    buttonKey: 'experiences.cultural.button',
+    catalogLink: '/experiences-catalog#cultural',
   },
   {
-    id: 'gourmet',
-    image: gourmetDinnerImage,
-    titleKey: 'experiences.gourmet.title',
-    descriptionKey: 'experiences.gourmet.description',
-    buttonKey: 'experiences.gourmet.button',
+    id: 'sea',
+    image: seaImage,
+    titleKey: 'experiences.sea.title',
+    descriptionKey: 'experiences.sea.description',
+    buttonKey: 'experiences.sea.button',
+    catalogLink: '/experiences-catalog#sea',
   },
   {
-    id: 'business',
-    image: businessLuxuryImage,
-    titleKey: 'experiences.business.title',
-    descriptionKey: 'experiences.business.description',
-    buttonKey: 'experiences.business.button',
+    id: 'adventure',
+    image: adventureImage,
+    titleKey: 'experiences.adventure.title',
+    descriptionKey: 'experiences.adventure.description',
+    buttonKey: 'experiences.adventure.button',
+    catalogLink: '/experiences-catalog#adventure',
   },
   {
-    id: 'family',
-    image: familyLuxuryImage,
-    titleKey: 'experiences.family.title',
-    descriptionKey: 'experiences.family.description',
-    buttonKey: 'experiences.family.button',
+    id: 'extreme',
+    image: extremeImage,
+    titleKey: 'experiences.extreme.title',
+    descriptionKey: 'experiences.extreme.description',
+    buttonKey: 'experiences.extreme.button',
+    catalogLink: '/experiences-catalog#extreme',
   },
 ];
 
 export function CuratedExperiencesSection() {
   const { t } = useLanguage();
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section className="py-24 bg-background">
@@ -105,10 +103,12 @@ export function CuratedExperiencesSection() {
                       
                       {/* Button - hidden by default, shows on hover */}
                       <Button
-                        onClick={scrollToContact}
+                        asChild
                         className="w-fit bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold px-8 py-3 rounded-md opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150 gold-shadow"
                       >
-                        {t(experience.buttonKey)}
+                        <Link to={experience.catalogLink}>
+                          {t(experience.buttonKey)}
+                        </Link>
                       </Button>
                     </div>
                   </div>
