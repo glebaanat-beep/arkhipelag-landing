@@ -319,7 +319,7 @@ const translations: Translations = {
     'testimonials.4.title': 'Руководитель модного бизнеса',
     
     // Curated Experiences section
-    'experiences.title': 'Кураторские Впечатления',
+    'experiences.title': 'Эксклюзивные впечатления',
     'experiences.subtitle': 'Откройте для себя эксклюзивные сценарии образа жизни, созданные специально для вас',
     'experiences.yacht.title': 'Идеальный Побег с Острова',
     'experiences.yacht.description': 'Частные чартеры яхт к скрытым лагунам, эксклюзивное размещение в виллах и персонализированные маршруты по островам в полной конфиденциальности.',
