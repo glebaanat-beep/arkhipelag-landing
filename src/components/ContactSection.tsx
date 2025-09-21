@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -8,6 +8,7 @@ import { Checkbox } from './ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useToast } from '../hooks/use-toast';
+import { Link } from 'react-router-dom';
 
 // Import Thailand map
 import thailandMapImage from '../assets/thailand-map.jpg';
@@ -200,14 +201,14 @@ export function ContactSection() {
                   className="text-sm text-text-secondary leading-relaxed cursor-pointer"
                 >
                   {t('contact.form.privacyConsent.text')}{' '}
-                  <a 
-                    href="/privacy-policy" 
+                  <Link 
+                    to="/privacy-policy" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-luxury-gold hover:text-luxury-gold-bright underline"
                   >
                     {t('contact.form.privacyConsent.link')}
-                  </a>
+                  </Link>
                   .
                 </Label>
               </div>
