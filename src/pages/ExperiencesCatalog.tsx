@@ -33,112 +33,112 @@ export default function ExperiencesCatalog() {
 
   const culturalExperiences = [
     {
-      title: 'Grand Palace & Emerald Buddha Temple',
-      description: 'Private guide through the residence of the Rattanakosin kings and Thailand\'s most sacred Buddhist temple with exclusive access to restricted areas.',
+      titleKey: 'catalog.cultural.palace.title',
+      descriptionKey: 'catalog.cultural.palace.description',
       price: '1,500 – 8,000 THB'
     },
     {
-      title: 'Ayutthaya + Chao Phraya River Cruise',
-      description: 'A day in the ancient capital of Siam with luxury river cruise back to Bangkok, including private historian guide.',
+      titleKey: 'catalog.cultural.ayutthaya.title',
+      descriptionKey: 'catalog.cultural.ayutthaya.description',
       price: '8,000 – 12,000 THB'
     },
     {
-      title: 'Floating Markets & Local Life',
-      description: 'Authentic market experience at Damnoen Saduak with private longtail boat and cultural immersion activities.',
+      titleKey: 'catalog.cultural.floating.title',
+      descriptionKey: 'catalog.cultural.floating.description',
       price: '3,500 – 6,000 THB'
     },
     {
-      title: 'Temple Hopping in Bangkok',
-      description: 'Sacred journey through Wat Pho, Wat Arun, and hidden temple gems with meditation session.',
+      titleKey: 'catalog.cultural.temples.title',
+      descriptionKey: 'catalog.cultural.temples.description',
       price: '2,500 – 5,500 THB'
     },
     {
-      title: 'Northern Hill Tribes Experience',
-      description: 'Multi-day cultural immersion with Karen and Hmong communities in Chiang Mai mountains.',
+      titleKey: 'catalog.cultural.tribes.title',
+      descriptionKey: 'catalog.cultural.tribes.description',
       price: '15,000 – 25,000 THB'
     }
   ];
 
   const seaExperiences = [
     {
-      title: 'Luxury Yacht Charter - Full Day',
-      description: 'Private yacht charter with professional crew, gourmet catering, and customized island hopping itinerary.',
+      titleKey: 'catalog.sea.yacht.title',
+      descriptionKey: 'catalog.sea.yacht.description',
       price: '45,000 – 120,000 THB'
     },
     {
-      title: 'Phi Phi Islands VIP Tour',
-      description: 'Exclusive speedboat tour to Maya Bay, Bamboo Island, and Viking Cave with private beach access.',
+      titleKey: 'catalog.sea.phiphi.title',
+      descriptionKey: 'catalog.sea.phiphi.description',
       price: '12,000 – 18,000 THB'
     },
     {
-      title: 'Sunset Sailing Experience',
-      description: 'Romantic sunset cruise on traditional Thai sailing boat with champagne and canapes.',
+      titleKey: 'catalog.sea.sunset.title',
+      descriptionKey: 'catalog.sea.sunset.description',
       price: '8,500 – 15,000 THB'
     },
     {
-      title: 'Phang Nga Bay Luxury Cruise',
-      description: 'Full day luxury catamaran cruise through dramatic limestone karsts with sea kayaking and cave exploration.',
+      titleKey: 'catalog.sea.phangnga.title',
+      descriptionKey: 'catalog.sea.phangnga.description',
       price: '16,000 – 28,000 THB'
     },
     {
-      title: 'Private Beach Picnic Setup',
-      description: 'Exclusive beach access with luxury picnic setup, personal chef, and water sports equipment.',
+      titleKey: 'catalog.sea.beach.title',
+      descriptionKey: 'catalog.sea.beach.description',
       price: '25,000 – 40,000 THB'
     }
   ];
 
   const adventureExperiences = [
     {
-      title: 'Jungle Canopy Zipline',
-      description: 'Adrenaline-pumping zipline adventure through pristine rainforest canopy with certified guides.',
+      titleKey: 'catalog.adventure.zipline.title',
+      descriptionKey: 'catalog.adventure.zipline.description',
       price: '3,500 – 5,500 THB'
     },
     {
-      title: 'White Water Rafting',
-      description: 'Thrilling rapids adventure on Mae Taeng River with professional guides and safety equipment.',
+      titleKey: 'catalog.adventure.rafting.title',
+      descriptionKey: 'catalog.adventure.rafting.description',
       price: '2,800 – 4,500 THB'
     },
     {
-      title: 'Rock Climbing & Rappelling',
-      description: 'Challenge yourself on limestone cliffs in Railay Beach with expert instruction and equipment.',
+      titleKey: 'catalog.adventure.climbing.title',
+      descriptionKey: 'catalog.adventure.climbing.description',
       price: '4,500 – 7,000 THB'
     },
     {
-      title: 'Jungle Trekking & Camping',
-      description: 'Multi-day wilderness expedition with overnight camping, wildlife spotting, and survival skills.',
+      titleKey: 'catalog.adventure.trekking.title',
+      descriptionKey: 'catalog.adventure.trekking.description',
       price: '12,000 – 20,000 THB'
     },
     {
-      title: 'Sea Kayaking Adventure',
-      description: 'Explore hidden lagoons and sea caves in Krabi with professional guides and lunch on private beach.',
+      titleKey: 'catalog.adventure.kayaking.title',
+      descriptionKey: 'catalog.adventure.kayaking.description',
       price: '5,500 – 8,500 THB'
     }
   ];
 
   const extremeExperiences = [
     {
-      title: 'Tandem Skydiving',
-      description: 'Ultimate adrenaline rush with certified instructors, jumping from 15,000 feet over tropical paradise.',
+      titleKey: 'catalog.extreme.skydiving.title',
+      descriptionKey: 'catalog.extreme.skydiving.description',
       price: '18,000 – 25,000 THB'
     },
     {
-      title: 'Paragliding Over Islands',
-      description: 'Soar like a bird over turquoise waters and tropical islands with experienced tandem pilot.',
+      titleKey: 'catalog.extreme.paragliding.title',
+      descriptionKey: 'catalog.extreme.paragliding.description',
       price: '8,500 – 12,000 THB'
     },
     {
-      title: 'Bungee Jumping',
-      description: 'Take the leap from 200-foot platform over pristine jungle valley with full safety certification.',
+      titleKey: 'catalog.extreme.bungee.title',
+      descriptionKey: 'catalog.extreme.bungee.description',
       price: '3,500 – 5,000 THB'
     },
     {
-      title: 'Helicopter Tours',
-      description: 'Breathtaking aerial views of Thailand\'s coastline and islands from luxury helicopter with champagne service.',
+      titleKey: 'catalog.extreme.helicopter.title',
+      descriptionKey: 'catalog.extreme.helicopter.description',
       price: '35,000 – 65,000 THB'
     },
     {
-      title: 'Wing Walking Experience',
-      description: 'Once-in-a-lifetime adventure strapped to the wing of a vintage biplane over scenic landscapes.',
+      titleKey: 'catalog.extreme.wingwalking.title',
+      descriptionKey: 'catalog.extreme.wingwalking.description',
       price: '28,000 – 40,000 THB'
     }
   ];
@@ -178,18 +178,18 @@ export default function ExperiencesCatalog() {
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <div className="flex-1">
-                          <CardTitle className="text-xl md:text-2xl mb-2">{experience.title}</CardTitle>
-                          <CardDescription className="text-base md:text-lg">
-                            {experience.description}
+                          <CardTitle className="text-lg md:text-xl mb-2">{t(experience.titleKey)}</CardTitle>
+                          <CardDescription className="text-sm md:text-base">
+                            {t(experience.descriptionKey)}
                           </CardDescription>
                         </div>
                         <div className="ml-6 text-right">
-                          <div className="text-lg md:text-xl font-semibold text-luxury-gold mb-3">
+                          <div className="text-base md:text-lg font-semibold text-luxury-gold mb-3">
                             {experience.price}
                           </div>
                           <Button 
                             onClick={openTelegram}
-                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow"
+                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow text-sm"
                           >
                             {t('catalog.bookNow')}
                           </Button>
@@ -207,18 +207,18 @@ export default function ExperiencesCatalog() {
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <div className="flex-1">
-                          <CardTitle className="text-xl md:text-2xl mb-2">{experience.title}</CardTitle>
-                          <CardDescription className="text-base md:text-lg">
-                            {experience.description}
+                          <CardTitle className="text-lg md:text-xl mb-2">{t(experience.titleKey)}</CardTitle>
+                          <CardDescription className="text-sm md:text-base">
+                            {t(experience.descriptionKey)}
                           </CardDescription>
                         </div>
                         <div className="ml-6 text-right">
-                          <div className="text-lg md:text-xl font-semibold text-luxury-gold mb-3">
+                          <div className="text-base md:text-lg font-semibold text-luxury-gold mb-3">
                             {experience.price}
                           </div>
                           <Button 
                             onClick={openTelegram}
-                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow"
+                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow text-sm"
                           >
                             {t('catalog.bookNow')}
                           </Button>
@@ -236,18 +236,18 @@ export default function ExperiencesCatalog() {
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <div className="flex-1">
-                          <CardTitle className="text-xl md:text-2xl mb-2">{experience.title}</CardTitle>
-                          <CardDescription className="text-base md:text-lg">
-                            {experience.description}
+                          <CardTitle className="text-lg md:text-xl mb-2">{t(experience.titleKey)}</CardTitle>
+                          <CardDescription className="text-sm md:text-base">
+                            {t(experience.descriptionKey)}
                           </CardDescription>
                         </div>
                         <div className="ml-6 text-right">
-                          <div className="text-lg md:text-xl font-semibold text-luxury-gold mb-3">
+                          <div className="text-base md:text-lg font-semibold text-luxury-gold mb-3">
                             {experience.price}
                           </div>
                           <Button 
                             onClick={openTelegram}
-                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow"
+                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow text-sm"
                           >
                             {t('catalog.bookNow')}
                           </Button>
@@ -265,18 +265,18 @@ export default function ExperiencesCatalog() {
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <div className="flex-1">
-                          <CardTitle className="text-xl md:text-2xl mb-2">{experience.title}</CardTitle>
-                          <CardDescription className="text-base md:text-lg">
-                            {experience.description}
+                          <CardTitle className="text-lg md:text-xl mb-2">{t(experience.titleKey)}</CardTitle>
+                          <CardDescription className="text-sm md:text-base">
+                            {t(experience.descriptionKey)}
                           </CardDescription>
                         </div>
                         <div className="ml-6 text-right">
-                          <div className="text-lg md:text-xl font-semibold text-luxury-gold mb-3">
+                          <div className="text-base md:text-lg font-semibold text-luxury-gold mb-3">
                             {experience.price}
                           </div>
                           <Button 
                             onClick={openTelegram}
-                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow"
+                            className="bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow text-sm"
                           >
                             {t('catalog.bookNow')}
                           </Button>

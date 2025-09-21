@@ -352,6 +352,54 @@ const translations: Translations = {
     'catalog.bookNow': 'Забронировать',
     'catalog.contactToBook': 'Связаться для бронирования',
     
+    // Cultural Experiences
+    'catalog.cultural.palace.title': 'Большой дворец и храм Изумрудного Будды',
+    'catalog.cultural.palace.description': 'Частная экскурсия с гидом по резиденции королей Раттанакосин и самому священному буддийскому храму Таиланда с эксклюзивным доступом к закрытым зонам.',
+    'catalog.cultural.ayutthaya.title': 'Аюттхая + круиз по реке Чао Прайя',
+    'catalog.cultural.ayutthaya.description': 'День в древней столице Сиама с роскошным речным круизом обратно в Бангкок, включая частного гида-историка.',
+    'catalog.cultural.floating.title': 'Плавучие рынки и местная жизнь',
+    'catalog.cultural.floating.description': 'Аутентичный опыт рынка в Дамноен Садуак с частной лодкой и мероприятиями культурного погружения.',
+    'catalog.cultural.temples.title': 'Посещение храмов в Бангкоке',
+    'catalog.cultural.temples.description': 'Священное путешествие по Ват По, Ват Арун и скрытым храмовым жемчужинам с сеансом медитации.',
+    'catalog.cultural.tribes.title': 'Опыт северных горных племен',
+    'catalog.cultural.tribes.description': 'Многодневное культурное погружение с общинами Карен и Хмонг в горах Чиангмай.',
+    
+    // Sea Experiences
+    'catalog.sea.yacht.title': 'Аренда роскошной яхты - полный день',
+    'catalog.sea.yacht.description': 'Частная аренда яхты с профессиональным экипажем, изысканным кейтерингом и индивидуальным маршрутом по островам.',
+    'catalog.sea.phiphi.title': 'VIP тур по островам Пхи Пхи',
+    'catalog.sea.phiphi.description': 'Эксклюзивный тур на скоростном катере к заливу Майя, острову Бамбу и пещере Викингов с частным доступом к пляжу.',
+    'catalog.sea.sunset.title': 'Романтический круиз на закате',
+    'catalog.sea.sunset.description': 'Романтический круиз на закате на традиционной тайской парусной лодке с шампанским и канапе.',
+    'catalog.sea.phangnga.title': 'Роскошный круиз по заливу Пханг Нга',
+    'catalog.sea.phangnga.description': 'Полнодневный роскошный круиз на катамаране через драматические известняковые карсты с каякингом и исследованием пещер.',
+    'catalog.sea.beach.title': 'Частная организация пикника на пляже',
+    'catalog.sea.beach.description': 'Эксклюзивный доступ к пляжу с роскошной организацией пикника, личным шефом и оборудованием для водных видов спорта.',
+    
+    // Adventure Experiences
+    'catalog.adventure.zipline.title': 'Зиплайн по джунглям',
+    'catalog.adventure.zipline.description': 'Захватывающее приключение на зиплайне через нетронутый тропический лес с сертифицированными гидами.',
+    'catalog.adventure.rafting.title': 'Рафтинг по белой воде',
+    'catalog.adventure.rafting.description': 'Захватывающее приключение на порогах реки Мае Тенг с профессиональными гидами и оборудованием безопасности.',
+    'catalog.adventure.climbing.title': 'Скалолазание и спуск по канату',
+    'catalog.adventure.climbing.description': 'Испытайте себя на известняковых скалах пляжа Райлей с экспертным обучением и оборудованием.',
+    'catalog.adventure.trekking.title': 'Треккинг по джунглям и кемпинг',
+    'catalog.adventure.trekking.description': 'Многодневная экспедиция в дикую природу с ночевкой в палатках, наблюдением за дикими животными и навыками выживания.',
+    'catalog.adventure.kayaking.title': 'Приключенческий каякинг',
+    'catalog.adventure.kayaking.description': 'Исследуйте скрытые лагуны и морские пещеры в Краби с профессиональными гидами и обедом на частном пляже.',
+    
+    // Extreme Experiences
+    'catalog.extreme.skydiving.title': 'Тандемный прыжок с парашютом',
+    'catalog.extreme.skydiving.description': 'Максимальный выброс адреналина с сертифицированными инструкторами, прыжок с высоты 15,000 футов над тропическим раем.',
+    'catalog.extreme.paragliding.title': 'Полет на параплане над островами',
+    'catalog.extreme.paragliding.description': 'Парите как птица над бирюзовыми водами и тропическими островами с опытным тандем-пилотом.',
+    'catalog.extreme.bungee.title': 'Банджи-джампинг',
+    'catalog.extreme.bungee.description': 'Совершите прыжок с 200-футовой платформы над нетронутой долиной джунглей с полной сертификацией безопасности.',
+    'catalog.extreme.helicopter.title': 'Вертолетные туры',
+    'catalog.extreme.helicopter.description': 'Захватывающие виды с воздуха на побережье и острова Таиланда с роскошного вертолета с обслуживанием шампанским.',
+    'catalog.extreme.wingwalking.title': 'Опыт прогулки по крылу',
+    'catalog.extreme.wingwalking.description': 'Уникальное приключение, привязанное к крылу винтажного биплана над живописными пейзажами.',
+    
     // Contact
     'contact.title': 'Свяжитесь с нами',
     'contact.subtitle': 'Испытайте вершину люкс-консьерж услуг',
