@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
 import { AboutSection } from '../components/AboutSection';
@@ -8,6 +9,20 @@ import { TestimonialsSection } from '../components/TestimonialsSection';
 import { ContactSection } from '../components/ContactSection';
 
 const Index = () => {
+  // Handle anchor links when navigating from catalog page
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Small delay to ensure the page is fully rendered
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
