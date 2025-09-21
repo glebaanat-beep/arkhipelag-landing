@@ -144,6 +144,8 @@ const translations: Translations = {
     'contact.info.phone': 'Phone',
     'contact.info.telegram': 'Telegram Channel',
     'contact.description': 'Ready to experience Thailand\'s finest luxury services? Contact our team to begin crafting your bespoke experience.',
+    'contact.form.privacyConsent.text': 'I agree to the processing of my personal data in accordance with the',
+    'contact.form.privacyConsent.link': 'Privacy Policy',
   },
   ru: {
     // Navigation
@@ -275,6 +277,8 @@ const translations: Translations = {
     'contact.info.phone': 'Телефон',
     'contact.info.telegram': 'Telegram канал',
     'contact.description': 'Готовы испытать лучшие люксовые услуги Таиланда? Свяжитесь с нашей командой, чтобы начать создание вашего индивидуального опыта.',
+    'contact.form.privacyConsent.text': 'Я соглашаюсь на обработку моих персональных данных в соответствии с',
+    'contact.form.privacyConsent.link': 'Политикой конфиденциальности',
   },
 };
 

@@ -4,6 +4,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
+import { Checkbox } from './ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useToast } from '../hooks/use-toast';
@@ -24,6 +25,7 @@ export function ContactSection() {
     phone: '',
     message: ''
   });
+  const [privacyConsent, setPrivacyConsent] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -31,6 +33,15 @@ export function ContactSection() {
     if (!formData.firstName || !formData.surname || !formData.phone || !formData.message) {
       toast({
         title: "Please fill in all fields",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    if (!privacyConsent) {
+      toast({
+        title: "Privacy consent required",
+        description: "Please agree to the privacy policy to continue.",
         variant: "destructive"
       });
       return;
@@ -51,6 +62,7 @@ export function ContactSection() {
       phone: '',
       message: ''
     });
+    setPrivacyConsent(false);
   };
   return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -176,7 +188,36 @@ export function ContactSection() {
               }))} className="bg-input border-input-border min-h-32" required />
               </div>
               
-              <Button type="submit" size="lg" className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-background font-semibold gold-shadow transition-all duration-300">
+              <div className="flex items-start space-x-3 pt-4">
+                <Checkbox 
+                  id="privacy-consent"
+                  checked={privacyConsent}
+                  onCheckedChange={(checked) => setPrivacyConsent(checked as boolean)}
+                  className="mt-1"
+                />
+                <Label 
+                  htmlFor="privacy-consent" 
+                  className="text-sm text-text-secondary leading-relaxed cursor-pointer"
+                >
+                  {t('contact.form.privacyConsent.text')}{' '}
+                  <a 
+                    href="/privacy-policy" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-luxury-gold hover:text-luxury-gold-bright underline"
+                  >
+                    {t('contact.form.privacyConsent.link')}
+                  </a>
+                  .
+                </Label>
+              </div>
+              
+              <Button 
+                type="submit" 
+                size="lg" 
+                disabled={!privacyConsent}
+                className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-background font-semibold gold-shadow transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
                 {t('contact.form.submit')}
               </Button>
             </form>
