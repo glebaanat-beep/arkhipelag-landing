@@ -349,7 +349,7 @@ const translations: Translations = {
     'contact.info.title': 'Контактная информация',
     'contact.info.email': 'Электронная почта',
     'contact.info.phone': 'Телефон',
-    'contact.info.telegram': 'Telegram канал',
+    'contact.info.telegram': 'Telegram',
     'contact.description': 'Готовы испытать лучшие люксовые услуги Таиланда? Свяжитесь с нашей командой, чтобы начать создание вашего индивидуального опыта.',
     'contact.form.privacyConsent.text': 'Я соглашаюсь на обработку моих персональных данных в соответствии с',
     'contact.form.privacyConsent.link': 'Политикой конфиденциальности',
