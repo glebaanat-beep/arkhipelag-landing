@@ -164,11 +164,31 @@ export default function ExperiencesCatalog() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <Tabs defaultValue="cultural" className="w-full">
-              <TabsList className="grid grid-cols-4 w-fit mx-auto mb-12 bg-surface-elevated border border-border p-1.5 rounded-xl shadow-lg gap-1">
-                <TabsTrigger value="cultural" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.cultural')}</TabsTrigger>
-                <TabsTrigger value="sea" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.sea')}</TabsTrigger>
-                <TabsTrigger value="adventure" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.adventure')}</TabsTrigger>
-                <TabsTrigger value="extreme" className="text-sm font-semibold py-3 px-6 rounded-lg data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all duration-300 whitespace-nowrap">{t('catalog.tab.extreme')}</TabsTrigger>
+              <TabsList className="flex flex-wrap justify-center gap-2 mb-12 bg-transparent p-0 h-auto">
+                <TabsTrigger 
+                  value="cultural" 
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                >
+                  {t('catalog.tab.cultural')}
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="sea" 
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                >
+                  {t('catalog.tab.sea')}
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="adventure" 
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                >
+                  {t('catalog.tab.adventure')}
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="extreme" 
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                >
+                  {t('catalog.tab.extreme')}
+                </TabsTrigger>
               </TabsList>
 
               {/* Cultural Tab */}
