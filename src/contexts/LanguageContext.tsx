@@ -19,7 +19,7 @@ const translations: Translations = {
     'nav.about': 'About Us',
     'nav.services': 'Services',
     'nav.process': 'Our Process',
-    'nav.experiences': 'Experiences',
+    'nav.experiences': 'Collection',
     'nav.contact': 'Contact',
     
     // Hero Section
@@ -283,7 +283,7 @@ const translations: Translations = {
     'nav.about': 'О нас',
     'nav.services': 'Услуги',
     'nav.process': 'Наш процесс',
-    'nav.experiences': 'Опыты',
+    'nav.experiences': 'Коллекция',
     'nav.contact': 'Контакты',
     
     // Hero Section
