@@ -136,6 +136,54 @@ const translations: Translations = {
     'catalog.bookNow': 'Book Now',
     'catalog.contactToBook': 'Contact to Book',
     
+    // Cultural Experiences
+    'catalog.cultural.palace.title': 'Grand Palace and Emerald Buddha Temple',
+    'catalog.cultural.palace.description': 'Private guided tour of the Rattanakosin Kings\' residence and Thailand\'s most sacred Buddhist temple with exclusive access to restricted areas.',
+    'catalog.cultural.ayutthaya.title': 'Ayutthaya + Chao Phraya River Cruise',
+    'catalog.cultural.ayutthaya.description': 'A day in the ancient capital of Siam with a luxurious river cruise back to Bangkok, including a private historian guide.',
+    'catalog.cultural.floating.title': 'Floating Markets and Local Life',
+    'catalog.cultural.floating.description': 'Authentic Damnoen Saduak market experience with private boat and cultural immersion activities.',
+    'catalog.cultural.temples.title': 'Bangkok Temple Visits',
+    'catalog.cultural.temples.description': 'Sacred journey through Wat Pho, Wat Arun and hidden temple gems with meditation session.',
+    'catalog.cultural.tribes.title': 'Northern Hill Tribes Experience',
+    'catalog.cultural.tribes.description': 'Multi-day cultural immersion with Karen and Hmong communities in the Chiang Mai mountains.',
+    
+    // Sea Experiences
+    'catalog.sea.yacht.title': 'Luxury Yacht Charter - Full Day',
+    'catalog.sea.yacht.description': 'Private yacht charter with professional crew, exquisite catering and customized island itinerary.',
+    'catalog.sea.phiphi.title': 'VIP Phi Phi Islands Tour',
+    'catalog.sea.phiphi.description': 'Exclusive speedboat tour to Maya Bay, Bamboo Island and Viking Cave with private beach access.',
+    'catalog.sea.sunset.title': 'Romantic Sunset Cruise',
+    'catalog.sea.sunset.description': 'Romantic sunset cruise on traditional Thai sailing boat with champagne and canapés.',
+    'catalog.sea.phangnga.title': 'Luxury Phang Nga Bay Cruise',
+    'catalog.sea.phangnga.description': 'Full-day luxury catamaran cruise through dramatic limestone karsts with kayaking and cave exploration.',
+    'catalog.sea.beach.title': 'Private Beach Picnic Setup',
+    'catalog.sea.beach.description': 'Exclusive beach access with luxury picnic setup, personal chef and water sports equipment.',
+    
+    // Adventure Experiences
+    'catalog.adventure.zipline.title': 'Jungle Zipline',
+    'catalog.adventure.zipline.description': 'Thrilling zipline adventure through pristine rainforest canopy with certified guides.',
+    'catalog.adventure.rafting.title': 'White Water Rafting',
+    'catalog.adventure.rafting.description': 'Exhilarating adventure on Mae Taeng River rapids with professional guides and safety equipment.',
+    'catalog.adventure.climbing.title': 'Rock Climbing and Abseiling',
+    'catalog.adventure.climbing.description': 'Challenge yourself on Railay Beach limestone cliffs with expert instruction and equipment.',
+    'catalog.adventure.trekking.title': 'Jungle Trekking and Camping',
+    'catalog.adventure.trekking.description': 'Multi-day wilderness expedition with tent camping, wildlife spotting and survival skills.',
+    'catalog.adventure.kayaking.title': 'Adventure Kayaking',
+    'catalog.adventure.kayaking.description': 'Explore hidden lagoons and sea caves in Krabi with professional guides and private beach lunch.',
+    
+    // Extreme Experiences
+    'catalog.extreme.skydiving.title': 'Tandem Skydiving',
+    'catalog.extreme.skydiving.description': 'Ultimate adrenaline rush with certified instructors, jumping from 15,000 feet above tropical paradise.',
+    'catalog.extreme.paragliding.title': 'Paragliding Over Islands',
+    'catalog.extreme.paragliding.description': 'Soar like a bird over turquoise waters and tropical islands with experienced tandem pilot.',
+    'catalog.extreme.bungee.title': 'Bungee Jumping',
+    'catalog.extreme.bungee.description': 'Take the leap from a 200-foot platform over pristine jungle valley with full safety certification.',
+    'catalog.extreme.helicopter.title': 'Helicopter Tours',
+    'catalog.extreme.helicopter.description': 'Breathtaking aerial views of Thailand\'s coastline and islands from luxury helicopter with champagne service.',
+    'catalog.extreme.wingwalking.title': 'Wing Walking Experience',
+    'catalog.extreme.wingwalking.description': 'Unique adventure strapped to the wing of a vintage biplane over scenic landscapes.',
+    
     // Contact
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Experience the pinnacle of luxury concierge services',
