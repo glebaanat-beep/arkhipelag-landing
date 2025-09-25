@@ -56,13 +56,6 @@ export function ContactSection() {
                 </div>
               </div>
             </div>
-            
-            {/* Description */}
-            <div className="bg-card rounded-3xl p-12 luxury-shadow max-w-2xl mx-auto">
-              <p className="text-text-secondary text-xl leading-relaxed text-center">
-                {t('contact.description')}
-              </p>
-            </div>
           </div>
         </div>
       </div>
