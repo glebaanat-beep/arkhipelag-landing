@@ -1,70 +1,8 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { Textarea } from './ui/textarea';
-import { Checkbox } from './ui/checkbox';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
+import React from 'react';
+import { Mail, Phone, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useToast } from '../hooks/use-toast';
-import { Link } from 'react-router-dom';
-
-// Import Thailand map
-import thailandMapImage from '../assets/thailand-map.jpg';
 export function ContactSection() {
-  const {
-    t
-  } = useLanguage();
-  const {
-    toast
-  } = useToast();
-  const [formData, setFormData] = useState({
-    salutation: '',
-    firstName: '',
-    surname: '',
-    phone: '',
-    message: ''
-  });
-  const [privacyConsent, setPrivacyConsent] = useState(false);
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Basic validation
-    if (!formData.firstName || !formData.surname || !formData.phone || !formData.message) {
-      toast({
-        title: "Please fill in all fields",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    if (!privacyConsent) {
-      toast({
-        title: "Privacy consent required",
-        description: "Please agree to the privacy policy to continue.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Thank you for your inquiry",
-      description: "We will contact you shortly."
-    });
-
-    // Reset form
-    setFormData({
-      salutation: '',
-      firstName: '',
-      surname: '',
-      phone: '',
-      message: ''
-    });
-    setPrivacyConsent(false);
-  };
+  const { t } = useLanguage();
   return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
@@ -77,151 +15,58 @@ export function ContactSection() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Information */}
-          <div>
-            <h3 className="font-heading text-2xl font-bold mb-8 text-text-primary">
+          <div className="text-center">
+            <h3 className="font-heading text-3xl font-bold mb-12 text-text-primary">
               {t('contact.info.title')}
             </h3>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-luxury-gold rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-background" />
+            <div className="space-y-8 mb-12">
+              <div className="flex items-center justify-center space-x-6">
+                <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center luxury-shadow">
+                  <Mail className="w-8 h-8 text-background" />
                 </div>
-                <div>
-                  <p className="text-text-muted text-sm">{t('contact.info.email')}</p>
-                  <p className="text-text-primary font-medium">arkhipelagllc@gmail.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-luxury-gold rounded-lg flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-background" />
-                </div>
-                <div>
-                  <p className="text-text-muted text-sm">{t('contact.info.phone')}</p>
-                  <p className="text-text-primary font-medium">+66622213911</p>
+                <div className="text-left">
+                  <p className="text-text-muted text-sm mb-1">{t('contact.info.email')}</p>
+                  <p className="text-text-primary font-semibold text-lg">arkhipelagllc@gmail.com</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-luxury-gold rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-background" />
+              <div className="flex items-center justify-center space-x-6">
+                <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center luxury-shadow">
+                  <Phone className="w-8 h-8 text-background" />
                 </div>
-                <div>
-                  <p className="text-text-muted text-sm">{t('contact.info.telegram')}</p>
+                <div className="text-left">
+                  <p className="text-text-muted text-sm mb-1">{t('contact.info.phone')}</p>
+                  <p className="text-text-primary font-semibold text-lg">+66622213911</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center space-x-6">
+                <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center luxury-shadow">
+                  <MessageCircle className="w-8 h-8 text-background" />
+                </div>
+                <div className="text-left">
+                  <p className="text-text-muted text-sm mb-1">{t('contact.info.telegram')}</p>
                   <a 
                     href="https://t.me/Arkhipelag_llc" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-text-primary font-medium hover:text-luxury-gold transition-colors"
+                    className="text-text-primary font-semibold text-lg hover:text-luxury-gold transition-colors"
                   >
                     @Arkhipelag_llc
                   </a>
                 </div>
               </div>
-              
             </div>
             
             {/* Description */}
-            <div className="bg-card rounded-2xl p-8 luxury-shadow">
-              <p className="text-text-secondary text-lg leading-relaxed mb-6">
+            <div className="bg-card rounded-3xl p-10 luxury-shadow max-w-xl mx-auto">
+              <p className="text-text-secondary text-xl leading-relaxed text-center">
                 {t('contact.description')}
               </p>
             </div>
-            
-            {/* Thailand Map */}
-            
-          </div>
-          
-          {/* Contact Form */}
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="salutation">{t('contact.form.salutation')}</Label>
-                  <Select value={formData.salutation} onValueChange={value => setFormData(prev => ({
-                  ...prev,
-                  salutation: value
-                }))}>
-                    <SelectTrigger className="bg-input border-input-border">
-                      <SelectValue placeholder="Select..." />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="mr">{t('contact.form.mr')}</SelectItem>
-                      <SelectItem value="mrs">{t('contact.form.mrs')}</SelectItem>
-                      <SelectItem value="ms">{t('contact.form.ms')}</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="firstName">{t('contact.form.firstname')}</Label>
-                  <Input id="firstName" value={formData.firstName} onChange={e => setFormData(prev => ({
-                  ...prev,
-                  firstName: e.target.value
-                }))} className="bg-input border-input-border" required />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="surname">{t('contact.form.surname')}</Label>
-                <Input id="surname" value={formData.surname} onChange={e => setFormData(prev => ({
-                ...prev,
-                surname: e.target.value
-              }))} className="bg-input border-input-border" required />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="phone">{t('contact.form.phone')}</Label>
-                <Input id="phone" type="tel" value={formData.phone} onChange={e => setFormData(prev => ({
-                ...prev,
-                phone: e.target.value
-              }))} className="bg-input border-input-border" required />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="message">{t('contact.form.message')}</Label>
-                <Textarea id="message" value={formData.message} onChange={e => setFormData(prev => ({
-                ...prev,
-                message: e.target.value
-              }))} className="bg-input border-input-border min-h-32" required />
-              </div>
-              
-              <div className="flex items-start space-x-3 pt-4">
-                <Checkbox 
-                  id="privacy-consent"
-                  checked={privacyConsent}
-                  onCheckedChange={(checked) => setPrivacyConsent(checked as boolean)}
-                  className="mt-1"
-                />
-                <Label 
-                  htmlFor="privacy-consent" 
-                  className="text-sm text-text-secondary leading-relaxed cursor-pointer"
-                >
-                  {t('contact.form.privacyConsent.text')}{' '}
-                  <Link 
-                    to="/privacy-policy" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-luxury-gold hover:text-luxury-gold-bright underline"
-                  >
-                    {t('contact.form.privacyConsent.link')}
-                  </Link>
-                  .
-                </Label>
-              </div>
-              
-              <Button 
-                type="submit" 
-                size="lg" 
-                disabled={!privacyConsent}
-                className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-background font-semibold gold-shadow transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {t('contact.form.submit')}
-              </Button>
-            </form>
           </div>
         </div>
       </div>
