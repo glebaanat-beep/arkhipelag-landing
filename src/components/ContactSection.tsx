@@ -18,10 +18,6 @@ export function ContactSection() {
         <div className="max-w-3xl mx-auto">
           {/* Contact Information */}
           <div className="text-center">
-            <h3 className="font-heading text-3xl font-bold mb-16 text-text-primary">
-              {t('contact.info.title')}
-            </h3>
-            
             <div className="space-y-12 mb-16 max-w-md mx-auto">
               <div className="flex items-center space-x-8">
                 <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow flex-shrink-0">
