@@ -22,32 +22,32 @@ export function ContactSection() {
               {t('contact.info.title')}
             </h3>
             
-            <div className="space-y-12 mb-16">
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
-                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow">
+            <div className="space-y-12 mb-16 max-w-md mx-auto">
+              <div className="flex items-center space-x-8">
+                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow flex-shrink-0">
                   <Mail className="w-10 h-10 text-background" />
                 </div>
-                <div className="text-center sm:text-left">
+                <div className="text-left flex-1">
                   <p className="text-text-muted text-base mb-2">{t('contact.info.email')}</p>
                   <p className="text-text-primary font-semibold text-xl">arkhipelagllc@gmail.com</p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
-                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow">
+              <div className="flex items-center space-x-8">
+                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow flex-shrink-0">
                   <Phone className="w-10 h-10 text-background" />
                 </div>
-                <div className="text-center sm:text-left">
+                <div className="text-left flex-1">
                   <p className="text-text-muted text-base mb-2">{t('contact.info.phone')}</p>
                   <p className="text-text-primary font-semibold text-xl">+66622213911</p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
-                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow">
+              <div className="flex items-center space-x-8">
+                <div className="w-20 h-20 bg-luxury-gold rounded-3xl flex items-center justify-center luxury-shadow flex-shrink-0">
                   <MessageCircle className="w-10 h-10 text-background" />
                 </div>
-                <div className="text-center sm:text-left">
+                <div className="text-left flex-1">
                   <p className="text-text-muted text-base mb-2">{t('contact.info.telegram')}</p>
                   <a 
                     href="https://t.me/Arkhipelag_llc" 
