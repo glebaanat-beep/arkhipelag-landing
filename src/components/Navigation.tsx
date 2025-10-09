@@ -1,15 +1,19 @@
 import { useState } from 'react';
-import { Globe, Menu, X, ArrowLeft } from 'lucide-react';
+import { Globe, Menu, X, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useCart } from '../contexts/CartContext';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
 export function Navigation() {
   const {
     language,
     setLanguage,
     t
   } = useLanguage();
+  const { getTotalItems, getTotalPrice, cart, removeFromCart } = useCart();
   const [isOpen, setIsOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const isOnCatalog = location.pathname === '/experiences-catalog';
@@ -67,6 +71,83 @@ export function Navigation() {
               {t('nav.contact')}
             </button>
             
+            {/* Cart Icon */}
+            <Sheet open={cartOpen} onOpenChange={setCartOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <ShoppingCart className="w-5 h-5" />
+                  {getTotalItems() > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-luxury-gold text-primary-foreground text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                      {getTotalItems()}
+                    </span>
+                  )}
+                </Button>
+              </SheetTrigger>
+              <SheetContent className="w-full sm:max-w-lg">
+                <SheetHeader>
+                  <SheetTitle>{t('cart.title')}</SheetTitle>
+                </SheetHeader>
+                <div className="mt-6 space-y-4">
+                  {cart.length === 0 ? (
+                    <p className="text-center text-text-muted py-8">{t('cart.empty')}</p>
+                  ) : (
+                    <>
+                      <div className="space-y-4 max-h-[60vh] overflow-y-auto">
+                        {cart.map((item) => (
+                          <div key={item.service.id} className="border border-border rounded-lg p-4 space-y-2">
+                            <div className="flex justify-between items-start">
+                              <h3 className="font-semibold">{t(item.service.titleKey)}</h3>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => removeFromCart(item.service.id)}
+                                className="text-destructive"
+                              >
+                                {t('cart.remove')}
+                              </Button>
+                            </div>
+                            <p className="text-sm text-text-muted">
+                              {t('catalog.basePrice')}: {item.service.basePrice.toLocaleString()} THB
+                            </p>
+                            {item.selectedAddOns.length > 0 && (
+                              <div className="text-sm">
+                                <p className="text-text-secondary font-medium">{t('cart.addOns')}:</p>
+                                <ul className="list-disc list-inside text-text-muted">
+                                  {item.selectedAddOns.map((addon) => (
+                                    <li key={addon.id}>
+                                      {t(addon.titleKey)} (+{addon.price.toLocaleString()} THB)
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                            <p className="text-lg font-bold text-luxury-gold pt-2 border-t border-border">
+                              {t('catalog.total')}: {item.subtotal.toLocaleString()} THB
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="border-t border-border pt-4 space-y-4">
+                        <div className="flex justify-between items-center text-xl font-bold">
+                          <span>{t('cart.grandTotal')}:</span>
+                          <span className="text-luxury-gold">{getTotalPrice().toLocaleString()} THB</span>
+                        </div>
+                        <Button
+                          className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow"
+                          onClick={() => {
+                            navigate('/checkout');
+                            setCartOpen(false);
+                          }}
+                        >
+                          {t('cart.checkout')}
+                        </Button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </SheetContent>
+            </Sheet>
+
             {/* Language Switcher */}
             <div className="flex items-center space-x-2">
               <Globe className="w-4 h-4 text-text-muted" />
