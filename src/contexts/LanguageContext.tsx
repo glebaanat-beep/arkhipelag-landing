@@ -170,7 +170,7 @@ const translations: Translations = {
     'addons.extended': 'Extended Tour Time',
     
     // Cultural Experiences
-    'catalog.cultural.palace.title': 'Grand Palace and Emerald Buddha Temple',
+    'catalog.cultural.palace.title': 'Exclusive Visit to the Grand Palace and Temple of the Emerald Buddha',
     'catalog.cultural.palace.description': 'Private guided tour of the Rattanakosin Kings\' residence and Thailand\'s most sacred Buddhist temple with exclusive access to restricted areas.',
     'catalog.cultural.ayutthaya.title': 'Ayutthaya + Chao Phraya River Cruise',
     'catalog.cultural.ayutthaya.description': 'A day in the ancient capital of Siam with a luxurious river cruise back to Bangkok, including a private historian guide.',
@@ -467,7 +467,7 @@ const translations: Translations = {
     'addons.extended': 'Расширенное время тура',
     
     // Cultural Experiences
-    'catalog.cultural.palace.title': 'Большой дворец и храм Изумрудного Будды',
+    'catalog.cultural.palace.title': 'Эксклюзивный визит в Большой дворец и Храм Изумрудного Будды',
     'catalog.cultural.palace.description': 'Частная экскурсия с гидом по резиденции королей Раттанакосин и самому священному буддийскому храму Таиланда с эксклюзивным доступом к закрытым зонам.',
     'catalog.cultural.ayutthaya.title': 'Аюттхая + круиз по реке Чао Прайя',
     'catalog.cultural.ayutthaya.description': 'День в древней столице Сиама с роскошным речным круизом обратно в Бангкок, включая частного гида-историка.',
