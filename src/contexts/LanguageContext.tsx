@@ -171,7 +171,7 @@ const translations: Translations = {
     
     // Cultural Experiences
     'catalog.cultural.palace.title': 'Exclusive Visit to the Grand Palace and Temple of the Emerald Buddha',
-    'catalog.cultural.palace.description': 'Private guided tour of the Rattanakosin Kings\' residence and Thailand\'s most sacred Buddhist temple with exclusive access to restricted areas.',
+    'catalog.cultural.palace.description': 'Prepare for a private immersion into Thailand\'s history and spirituality. This is not just a tour, but a unique journey designed for discerning travelers. You will enjoy private access to the Royal Palace halls closed to the general public and a monk offering ceremony at the Temple of the Emerald Buddha. Your personal accredited expert guide with deep knowledge of Chakri dynasty history and art will ensure complete immersion in the culture and traditions of the royal family.',
     'catalog.cultural.ayutthaya.title': 'Ayutthaya + Chao Phraya River Cruise',
     'catalog.cultural.ayutthaya.description': 'A day in the ancient capital of Siam with a luxurious river cruise back to Bangkok, including a private historian guide.',
     'catalog.cultural.floating.title': 'Floating Markets and Local Life',
@@ -468,7 +468,7 @@ const translations: Translations = {
     
     // Cultural Experiences
     'catalog.cultural.palace.title': 'Эксклюзивный визит в Большой дворец и Храм Изумрудного Будды',
-    'catalog.cultural.palace.description': 'Частная экскурсия с гидом по резиденции королей Раттанакосин и самому священному буддийскому храму Таиланда с эксклюзивным доступом к закрытым зонам.',
+    'catalog.cultural.palace.description': 'Приготовьтесь к приватному погружению в историю и духовность Таиланда. Это не просто экскурсия, а уникальное путешествие, разработанное для взыскательных путешественников. Вас ждет приватный доступ в закрытые для общего посещения залы Королевского дворца и церемония подношения монахам в Храме Изумрудного Будды. Ваш личный аккредитованный гид-эксперт с глубокими знаниями в истории и искусстве династии Чакри обеспечит полное погружение в культуру и традиции королевской семьи.',
     'catalog.cultural.ayutthaya.title': 'Аюттхая + круиз по реке Чао Прайя',
     'catalog.cultural.ayutthaya.description': 'День в древней столице Сиама с роскошным речным круизом обратно в Бангкок, включая частного гида-историка.',
     'catalog.cultural.floating.title': 'Плавучие рынки и местная жизнь',
