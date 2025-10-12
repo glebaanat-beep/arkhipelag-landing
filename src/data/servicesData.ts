@@ -6,60 +6,60 @@ export const servicesData: Service[] = [
     id: 'cultural-palace',
     titleKey: 'catalog.cultural.palace.title',
     descriptionKey: 'catalog.cultural.palace.description',
-    basePrice: 1500,
+    basePrice: 85000,
     category: 'cultural',
     addOns: [
-      { id: 'palace-photo', titleKey: 'addons.photographer', price: 2000 },
-      { id: 'palace-lunch', titleKey: 'addons.lunch', price: 1500 },
-      { id: 'palace-transport', titleKey: 'addons.transport', price: 1000 },
+      { id: 'palace-photo', titleKey: 'addons.palace.photo', price: 25000 },
+      { id: 'palace-lunch', titleKey: 'addons.palace.lunch', price: 25000 },
+      { id: 'palace-transport', titleKey: 'addons.palace.transport', price: 25000 },
     ]
   },
   {
     id: 'cultural-ayutthaya',
     titleKey: 'catalog.cultural.ayutthaya.title',
     descriptionKey: 'catalog.cultural.ayutthaya.description',
-    basePrice: 8000,
+    basePrice: 75000,
     category: 'cultural',
     addOns: [
-      { id: 'ayutthaya-photo', titleKey: 'addons.photographer', price: 3000 },
-      { id: 'ayutthaya-dinner', titleKey: 'addons.dinner', price: 2500 },
-      { id: 'ayutthaya-guide', titleKey: 'addons.guide', price: 2000 },
+      { id: 'ayutthaya-photo', titleKey: 'addons.ayutthaya.photo', price: 25000 },
+      { id: 'ayutthaya-dinner', titleKey: 'addons.ayutthaya.dinner', price: 15000 },
+      { id: 'ayutthaya-guide', titleKey: 'addons.ayutthaya.guide', price: 25000 },
     ]
   },
   {
     id: 'cultural-floating',
     titleKey: 'catalog.cultural.floating.title',
     descriptionKey: 'catalog.cultural.floating.description',
-    basePrice: 3500,
+    basePrice: 45000,
     category: 'cultural',
     addOns: [
-      { id: 'floating-photo', titleKey: 'addons.photographer', price: 1500 },
-      { id: 'floating-breakfast', titleKey: 'addons.breakfast', price: 800 },
-      { id: 'floating-transport', titleKey: 'addons.transport', price: 1200 },
+      { id: 'floating-photo', titleKey: 'addons.floating.photo', price: 25000 },
+      { id: 'floating-breakfast', titleKey: 'addons.floating.breakfast', price: 15000 },
+      { id: 'floating-transport', titleKey: 'addons.floating.transport', price: 15000 },
     ]
   },
   {
     id: 'cultural-temples',
     titleKey: 'catalog.cultural.temples.title',
     descriptionKey: 'catalog.cultural.temples.description',
-    basePrice: 2500,
+    basePrice: 65000,
     category: 'cultural',
     addOns: [
-      { id: 'temples-photo', titleKey: 'addons.photographer', price: 1800 },
-      { id: 'temples-meditation', titleKey: 'addons.meditation', price: 1000 },
-      { id: 'temples-transport', titleKey: 'addons.transport', price: 900 },
+      { id: 'temples-photo', titleKey: 'addons.temples.photo', price: 25000 },
+      { id: 'temples-meditation', titleKey: 'addons.temples.meditation', price: 35000 },
+      { id: 'temples-transport', titleKey: 'addons.temples.transport', price: 25000 },
     ]
   },
   {
     id: 'cultural-tribes',
     titleKey: 'catalog.cultural.tribes.title',
     descriptionKey: 'catalog.cultural.tribes.description',
-    basePrice: 15000,
+    basePrice: 295000,
     category: 'cultural',
     addOns: [
-      { id: 'tribes-photo', titleKey: 'addons.photographer', price: 5000 },
-      { id: 'tribes-accommodation', titleKey: 'addons.accommodation', price: 3500 },
-      { id: 'tribes-meals', titleKey: 'addons.meals', price: 2000 },
+      { id: 'tribes-photo', titleKey: 'addons.tribes.photo', price: 75000 },
+      { id: 'tribes-accommodation', titleKey: 'addons.tribes.accommodation', price: 55000 },
+      { id: 'tribes-chef', titleKey: 'addons.tribes.chef', price: 45000 },
     ]
   },
 
