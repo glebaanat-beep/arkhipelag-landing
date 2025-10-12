@@ -113,10 +113,23 @@ export default function ExperiencesCatalog() {
         {/* Contact Block */}
         <section className="py-20 md:py-24">
           <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-text-secondary text-base md:text-lg leading-relaxed">
-                {t('catalog.contact.message')}
-              </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-surface/50 backdrop-blur-sm border border-border/50 rounded-3xl p-8 md:p-12 text-center">
+                <p className="text-text-primary text-lg md:text-2xl leading-relaxed mb-2">
+                  {t('catalog.contact.message')}{' '}
+                  <a 
+                    href="https://t.me/Arkhipelag_llc" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-luxury-gold hover:text-luxury-gold-bright font-semibold transition-colors underline decoration-luxury-gold/30 hover:decoration-luxury-gold"
+                  >
+                    {t('catalog.contact.telegram')}
+                  </a>
+                </p>
+                <p className="text-text-secondary text-base md:text-lg">
+                  {t('catalog.contact.suffix')}
+                </p>
+              </div>
             </div>
           </div>
         </section>
