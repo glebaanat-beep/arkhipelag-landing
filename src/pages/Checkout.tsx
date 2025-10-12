@@ -125,7 +125,9 @@ const Checkout = () => {
                 
                 <div className="space-y-4">
                   <div>
-                    <Label htmlFor="fullName">{t('checkout.customerInfo.fullName')} *</Label>
+                    <Label htmlFor="fullName">
+                      {t('checkout.customerInfo.fullName')} <span className="text-luxury-gold">*</span>
+                    </Label>
                     <Input
                       id="fullName"
                       value={formData.fullName}
@@ -136,7 +138,9 @@ const Checkout = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="email">{t('checkout.customerInfo.email')} *</Label>
+                    <Label htmlFor="email">
+                      {t('checkout.customerInfo.email')} <span className="text-luxury-gold">*</span>
+                    </Label>
                     <Input
                       id="email"
                       type="email"
@@ -148,7 +152,9 @@ const Checkout = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="phone">{t('checkout.customerInfo.phone')} *</Label>
+                    <Label htmlFor="phone">
+                      {t('checkout.customerInfo.phone')} <span className="text-luxury-gold">*</span>
+                    </Label>
                     <Input
                       id="phone"
                       type="tel"
@@ -160,7 +166,9 @@ const Checkout = () => {
                   </div>
 
                   <div>
-                    <Label>{t('checkout.customerInfo.tourDate')} *</Label>
+                    <Label>
+                      {t('checkout.customerInfo.tourDate')} <span className="text-luxury-gold">*</span>
+                    </Label>
                     <Popover>
                       <PopoverTrigger asChild>
                         <Button
@@ -174,7 +182,7 @@ const Checkout = () => {
                           {formData.tourDate ? format(formData.tourDate, "PPP") : t('checkout.customerInfo.selectDate')}
                         </Button>
                       </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
+                      <PopoverContent className="w-auto p-0 bg-background" align="start">
                         <Calendar
                           mode="single"
                           selected={formData.tourDate}
@@ -188,15 +196,18 @@ const Checkout = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="participants">{t('checkout.customerInfo.participants')} *</Label>
+                    <Label htmlFor="participants">
+                      {t('checkout.customerInfo.participants')} <span className="text-luxury-gold">*</span>
+                    </Label>
                     <Select value={formData.participants} onValueChange={(value) => handleInputChange('participants', value)}>
                       <SelectTrigger className="mt-2">
                         <SelectValue placeholder={t('checkout.customerInfo.selectParticipants')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(num => (
-                          <SelectItem key={num} value={num.toString()}>{num}</SelectItem>
-                        ))}
+                        <SelectItem value="1">1</SelectItem>
+                        <SelectItem value="2">2</SelectItem>
+                        <SelectItem value="3">3</SelectItem>
+                        <SelectItem value="4+">4+</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
