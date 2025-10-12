@@ -65,187 +65,115 @@ export const servicesData: Service[] = [
 
   // Sea Experiences
   {
-    id: 'sea-yacht',
-    titleKey: 'catalog.sea.yacht.title',
-    descriptionKey: 'catalog.sea.yacht.description',
-    basePrice: 45000,
+    id: 'sea-sunseeker',
+    titleKey: 'catalog.sea.sunseeker.title',
+    descriptionKey: 'catalog.sea.sunseeker.description',
+    basePrice: 295000,
     category: 'sea',
     addOns: [
-      { id: 'yacht-chef', titleKey: 'addons.chef', price: 8000 },
-      { id: 'yacht-watersports', titleKey: 'addons.watersports', price: 5000 },
-      { id: 'yacht-photo', titleKey: 'addons.photographer', price: 6000 },
+      { id: 'sunseeker-chef', titleKey: 'addons.sea.sunseeker.chef.title', price: 55000 },
+      { id: 'sunseeker-photo', titleKey: 'addons.sea.sunseeker.photo.title', price: 45000 },
+      { id: 'sunseeker-diving', titleKey: 'addons.sea.sunseeker.diving.title', price: 75000 },
     ]
   },
   {
-    id: 'sea-phiphi',
-    titleKey: 'catalog.sea.phiphi.title',
-    descriptionKey: 'catalog.sea.phiphi.description',
-    basePrice: 12000,
+    id: 'sea-princess',
+    titleKey: 'catalog.sea.princess.title',
+    descriptionKey: 'catalog.sea.princess.description',
+    basePrice: 185000,
     category: 'sea',
     addOns: [
-      { id: 'phiphi-photo', titleKey: 'addons.photographer', price: 3000 },
-      { id: 'phiphi-lunch', titleKey: 'addons.lunch', price: 2000 },
-      { id: 'phiphi-diving', titleKey: 'addons.diving', price: 4000 },
+      { id: 'princess-lunch', titleKey: 'addons.sea.princess.lunch.title', price: 35000 },
+      { id: 'princess-seabob', titleKey: 'addons.sea.princess.seabob.title', price: 45000 },
+      { id: 'princess-overnight', titleKey: 'addons.sea.princess.overnight.title', price: 95000 },
     ]
   },
   {
-    id: 'sea-sunset',
-    titleKey: 'catalog.sea.sunset.title',
-    descriptionKey: 'catalog.sea.sunset.description',
-    basePrice: 8500,
+    id: 'sea-swan',
+    titleKey: 'catalog.sea.swan.title',
+    descriptionKey: 'catalog.sea.swan.description',
+    basePrice: 145000,
     category: 'sea',
     addOns: [
-      { id: 'sunset-champagne', titleKey: 'addons.champagne', price: 2500 },
-      { id: 'sunset-photo', titleKey: 'addons.photographer', price: 2000 },
-      { id: 'sunset-dinner', titleKey: 'addons.dinner', price: 3500 },
-    ]
-  },
-  {
-    id: 'sea-phangnga',
-    titleKey: 'catalog.sea.phangnga.title',
-    descriptionKey: 'catalog.sea.phangnga.description',
-    basePrice: 16000,
-    category: 'sea',
-    addOns: [
-      { id: 'phangnga-photo', titleKey: 'addons.photographer', price: 4000 },
-      { id: 'phangnga-lunch', titleKey: 'addons.lunch', price: 2500 },
-      { id: 'phangnga-kayak', titleKey: 'addons.kayak', price: 1500 },
-    ]
-  },
-  {
-    id: 'sea-beach',
-    titleKey: 'catalog.sea.beach.title',
-    descriptionKey: 'catalog.sea.beach.description',
-    basePrice: 25000,
-    category: 'sea',
-    addOns: [
-      { id: 'beach-chef', titleKey: 'addons.chef', price: 5000 },
-      { id: 'beach-photo', titleKey: 'addons.photographer', price: 4000 },
-      { id: 'beach-watersports', titleKey: 'addons.watersports', price: 3000 },
+      { id: 'swan-quartet', titleKey: 'addons.sea.swan.quartet.title', price: 25000 },
+      { id: 'swan-fireworks', titleKey: 'addons.sea.swan.fireworks.title', price: 45000 },
+      { id: 'swan-floral', titleKey: 'addons.sea.swan.floral.title', price: 35000 },
     ]
   },
 
   // Adventure Experiences
   {
-    id: 'adventure-zipline',
-    titleKey: 'catalog.adventure.zipline.title',
-    descriptionKey: 'catalog.adventure.zipline.description',
-    basePrice: 3500,
+    id: 'adventure-hanuman',
+    titleKey: 'catalog.adventure.hanuman.title',
+    descriptionKey: 'catalog.adventure.hanuman.description',
+    basePrice: 45000,
     category: 'adventure',
     addOns: [
-      { id: 'zipline-photo', titleKey: 'addons.photographer', price: 1500 },
-      { id: 'zipline-lunch', titleKey: 'addons.lunch', price: 800 },
-      { id: 'zipline-transport', titleKey: 'addons.transport', price: 1000 },
+      { id: 'hanuman-transport', titleKey: 'addons.adventure.hanuman.transport.title', price: 25000 },
+      { id: 'hanuman-ceremony', titleKey: 'addons.adventure.hanuman.ceremony.title', price: 35000 },
+      { id: 'hanuman-safari', titleKey: 'addons.adventure.hanuman.safari.title', price: 55000 },
     ]
   },
   {
-    id: 'adventure-rafting',
-    titleKey: 'catalog.adventure.rafting.title',
-    descriptionKey: 'catalog.adventure.rafting.description',
-    basePrice: 2800,
+    id: 'adventure-extreme-rafting',
+    titleKey: 'catalog.adventure.extremerafting.title',
+    descriptionKey: 'catalog.adventure.extremerafting.description',
+    basePrice: 65000,
     category: 'adventure',
     addOns: [
-      { id: 'rafting-photo', titleKey: 'addons.photographer', price: 1200 },
-      { id: 'rafting-lunch', titleKey: 'addons.lunch', price: 700 },
-      { id: 'rafting-transport', titleKey: 'addons.transport', price: 800 },
+      { id: 'extremerafting-drone', titleKey: 'addons.adventure.extremerafting.drone.title', price: 45000 },
+      { id: 'extremerafting-survival', titleKey: 'addons.adventure.extremerafting.survival.title', price: 35000 },
+      { id: 'extremerafting-helicopter', titleKey: 'addons.adventure.extremerafting.helicopter.title', price: 85000 },
     ]
   },
   {
-    id: 'adventure-climbing',
-    titleKey: 'catalog.adventure.climbing.title',
-    descriptionKey: 'catalog.adventure.climbing.description',
-    basePrice: 4500,
+    id: 'adventure-railay',
+    titleKey: 'catalog.adventure.railay.title',
+    descriptionKey: 'catalog.adventure.railay.description',
+    basePrice: 95000,
     category: 'adventure',
     addOns: [
-      { id: 'climbing-photo', titleKey: 'addons.photographer', price: 2000 },
-      { id: 'climbing-instructor', titleKey: 'addons.instructor', price: 1500 },
-      { id: 'climbing-lunch', titleKey: 'addons.lunch', price: 900 },
-    ]
-  },
-  {
-    id: 'adventure-trekking',
-    titleKey: 'catalog.adventure.trekking.title',
-    descriptionKey: 'catalog.adventure.trekking.description',
-    basePrice: 12000,
-    category: 'adventure',
-    addOns: [
-      { id: 'trekking-photo', titleKey: 'addons.photographer', price: 4000 },
-      { id: 'trekking-camping', titleKey: 'addons.camping', price: 3000 },
-      { id: 'trekking-meals', titleKey: 'addons.meals', price: 2000 },
-    ]
-  },
-  {
-    id: 'adventure-kayaking',
-    titleKey: 'catalog.adventure.kayaking.title',
-    descriptionKey: 'catalog.adventure.kayaking.description',
-    basePrice: 5500,
-    category: 'adventure',
-    addOns: [
-      { id: 'kayaking-photo', titleKey: 'addons.photographer', price: 2000 },
-      { id: 'kayaking-lunch', titleKey: 'addons.lunch', price: 1200 },
-      { id: 'kayaking-transport', titleKey: 'addons.transport', price: 1000 },
+      { id: 'railay-equipment', titleKey: 'addons.adventure.railay.equipment.title', price: 55000 },
+      { id: 'railay-photo', titleKey: 'addons.adventure.railay.photo.title', price: 75000 },
+      { id: 'railay-spa', titleKey: 'addons.adventure.railay.spa.title', price: 45000 },
     ]
   },
 
   // Extreme Experiences
   {
-    id: 'extreme-skydiving',
-    titleKey: 'catalog.extreme.skydiving.title',
-    descriptionKey: 'catalog.extreme.skydiving.description',
-    basePrice: 18000,
+    id: 'extreme-stratosphere',
+    titleKey: 'catalog.extreme.stratosphere.title',
+    descriptionKey: 'catalog.extreme.stratosphere.description',
+    basePrice: 450000,
     category: 'extreme',
     addOns: [
-      { id: 'skydiving-video', titleKey: 'addons.video', price: 3500 },
-      { id: 'skydiving-photo', titleKey: 'addons.photographer', price: 2500 },
-      { id: 'skydiving-transport', titleKey: 'addons.transport', price: 1500 },
+      { id: 'stratosphere-film', titleKey: 'addons.extreme.stratosphere.film.title', price: 150000 },
+      { id: 'stratosphere-certificate', titleKey: 'addons.extreme.stratosphere.certificate.title', price: 75000 },
+      { id: 'stratosphere-jet', titleKey: 'addons.extreme.stratosphere.jet.title', price: 295000 },
     ]
   },
   {
-    id: 'extreme-paragliding',
-    titleKey: 'catalog.extreme.paragliding.title',
-    descriptionKey: 'catalog.extreme.paragliding.description',
-    basePrice: 8500,
+    id: 'extreme-airbus',
+    titleKey: 'catalog.extreme.airbus.title',
+    descriptionKey: 'catalog.extreme.airbus.description',
+    basePrice: 550000,
     category: 'extreme',
     addOns: [
-      { id: 'paragliding-video', titleKey: 'addons.video', price: 2000 },
-      { id: 'paragliding-photo', titleKey: 'addons.photographer', price: 1500 },
-      { id: 'paragliding-transport', titleKey: 'addons.transport', price: 1000 },
+      { id: 'airbus-volcano', titleKey: 'addons.extreme.airbus.volcano.title', price: 185000 },
+      { id: 'airbus-diving', titleKey: 'addons.extreme.airbus.diving.title', price: 225000 },
+      { id: 'airbus-dinner', titleKey: 'addons.extreme.airbus.dinner.title', price: 145000 },
     ]
   },
   {
-    id: 'extreme-bungee',
-    titleKey: 'catalog.extreme.bungee.title',
-    descriptionKey: 'catalog.extreme.bungee.description',
-    basePrice: 3500,
+    id: 'extreme-wing-abyss',
+    titleKey: 'catalog.extreme.wingabyss.title',
+    descriptionKey: 'catalog.extreme.wingabyss.description',
+    basePrice: 850000,
     category: 'extreme',
     addOns: [
-      { id: 'bungee-video', titleKey: 'addons.video', price: 1500 },
-      { id: 'bungee-photo', titleKey: 'addons.photographer', price: 1000 },
-      { id: 'bungee-transport', titleKey: 'addons.transport', price: 800 },
-    ]
-  },
-  {
-    id: 'extreme-helicopter',
-    titleKey: 'catalog.extreme.helicopter.title',
-    descriptionKey: 'catalog.extreme.helicopter.description',
-    basePrice: 35000,
-    category: 'extreme',
-    addOns: [
-      { id: 'helicopter-champagne', titleKey: 'addons.champagne', price: 5000 },
-      { id: 'helicopter-photo', titleKey: 'addons.photographer', price: 8000 },
-      { id: 'helicopter-extended', titleKey: 'addons.extended', price: 15000 },
-    ]
-  },
-  {
-    id: 'extreme-wingwalking',
-    titleKey: 'catalog.extreme.wingwalking.title',
-    descriptionKey: 'catalog.extreme.wingwalking.description',
-    basePrice: 28000,
-    category: 'extreme',
-    addOns: [
-      { id: 'wingwalking-video', titleKey: 'addons.video', price: 5000 },
-      { id: 'wingwalking-photo', titleKey: 'addons.photographer', price: 4000 },
-      { id: 'wingwalking-transport', titleKey: 'addons.transport', price: 2000 },
+      { id: 'wingabyss-parachute', titleKey: 'addons.extreme.wingabyss.parachute.title', price: 95000 },
+      { id: 'wingabyss-documentary', titleKey: 'addons.extreme.wingabyss.documentary.title', price: 185000 },
+      { id: 'wingabyss-membership', titleKey: 'addons.extreme.wingabyss.membership.title', price: 155000 },
     ]
   },
 ];
