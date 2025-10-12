@@ -189,7 +189,7 @@ const translations: Translations = {
     'checkout.summary.addons': 'add-ons',
     'checkout.summary.total': 'Total',
     'checkout.submit': 'Proceed to Payment',
-    'checkout.backToCart': 'Back to Catalog',
+    'checkout.backToCart': 'Back to Cart',
     
     // Add-ons
     'addons.photographer': 'Professional Photographer',
@@ -616,7 +616,7 @@ const translations: Translations = {
     'checkout.summary.addons': 'доп. услуг',
     'checkout.summary.total': 'Итого',
     'checkout.submit': 'Перейти к оплате',
-    'checkout.checkout.backToCart': 'Вернуться в каталог',
+    'checkout.backToCart': 'Вернуться в Корзину',
     
     // Add-ons
     'addons.photographer': 'Профессиональный фотограф',
