@@ -9,9 +9,9 @@ export const servicesData: Service[] = [
     basePrice: 85000,
     category: 'cultural',
     addOns: [
-      { id: 'palace-photo', titleKey: 'addons.palace.photo', price: 25000 },
-      { id: 'palace-lunch', titleKey: 'addons.palace.lunch', price: 25000 },
-      { id: 'palace-transport', titleKey: 'addons.palace.transport', price: 25000 },
+      { id: 'palace-photo', titleKey: 'addons.palace.photo.title', price: 25000 },
+      { id: 'palace-lunch', titleKey: 'addons.palace.lunch.title', price: 25000 },
+      { id: 'palace-transport', titleKey: 'addons.palace.transport.title', price: 25000 },
     ]
   },
   {
@@ -21,9 +21,9 @@ export const servicesData: Service[] = [
     basePrice: 75000,
     category: 'cultural',
     addOns: [
-      { id: 'ayutthaya-photo', titleKey: 'addons.ayutthaya.photo', price: 25000 },
-      { id: 'ayutthaya-dinner', titleKey: 'addons.ayutthaya.dinner', price: 15000 },
-      { id: 'ayutthaya-guide', titleKey: 'addons.ayutthaya.guide', price: 25000 },
+      { id: 'ayutthaya-photo', titleKey: 'addons.ayutthaya.photo.title', price: 25000 },
+      { id: 'ayutthaya-dinner', titleKey: 'addons.ayutthaya.dinner.title', price: 15000 },
+      { id: 'ayutthaya-guide', titleKey: 'addons.ayutthaya.guide.title', price: 25000 },
     ]
   },
   {
@@ -33,9 +33,9 @@ export const servicesData: Service[] = [
     basePrice: 45000,
     category: 'cultural',
     addOns: [
-      { id: 'floating-photo', titleKey: 'addons.floating.photo', price: 25000 },
-      { id: 'floating-breakfast', titleKey: 'addons.floating.breakfast', price: 15000 },
-      { id: 'floating-transport', titleKey: 'addons.floating.transport', price: 15000 },
+      { id: 'floating-photo', titleKey: 'addons.floating.photo.title', price: 25000 },
+      { id: 'floating-breakfast', titleKey: 'addons.floating.breakfast.title', price: 15000 },
+      { id: 'floating-transport', titleKey: 'addons.floating.transport.title', price: 15000 },
     ]
   },
   {
@@ -45,9 +45,9 @@ export const servicesData: Service[] = [
     basePrice: 65000,
     category: 'cultural',
     addOns: [
-      { id: 'temples-photo', titleKey: 'addons.temples.photo', price: 25000 },
-      { id: 'temples-meditation', titleKey: 'addons.temples.meditation', price: 35000 },
-      { id: 'temples-transport', titleKey: 'addons.temples.transport', price: 25000 },
+      { id: 'temples-photo', titleKey: 'addons.temples.photo.title', price: 25000 },
+      { id: 'temples-meditation', titleKey: 'addons.temples.meditation.title', price: 35000 },
+      { id: 'temples-transport', titleKey: 'addons.temples.transport.title', price: 25000 },
     ]
   },
   {
@@ -57,9 +57,9 @@ export const servicesData: Service[] = [
     basePrice: 295000,
     category: 'cultural',
     addOns: [
-      { id: 'tribes-photo', titleKey: 'addons.tribes.photo', price: 75000 },
-      { id: 'tribes-accommodation', titleKey: 'addons.tribes.accommodation', price: 55000 },
-      { id: 'tribes-chef', titleKey: 'addons.tribes.chef', price: 45000 },
+      { id: 'tribes-photo', titleKey: 'addons.tribes.photo.title', price: 75000 },
+      { id: 'tribes-accommodation', titleKey: 'addons.tribes.accommodation.title', price: 55000 },
+      { id: 'tribes-chef', titleKey: 'addons.tribes.chef.title', price: 45000 },
     ]
   },
 
