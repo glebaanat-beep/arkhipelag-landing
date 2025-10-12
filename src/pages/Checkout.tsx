@@ -10,7 +10,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { CalendarIcon, Check } from 'lucide-react';
+import { CalendarIcon, Check, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 import { Navigation } from '@/components/Navigation';
@@ -356,6 +356,7 @@ const Checkout = () => {
                     onClick={() => navigate('/experiences-catalog')}
                     className="w-full mt-3"
                   >
+                    <ArrowLeft className="mr-2 h-4 w-4" />
                     {t('checkout.backToCart')}
                   </Button>
                 </div>
