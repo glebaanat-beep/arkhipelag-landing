@@ -129,7 +129,7 @@ const translations: Translations = {
 
     // Catalog Page
     'catalog.title': 'Our Curated Collection of Experiences',
-    'catalog.tab.cultural': 'Cultural',
+    'catalog.tab.cultural': 'Culture',
     'catalog.tab.sea': 'Sea',
     'catalog.tab.adventure': 'Adventure',
     'catalog.tab.extreme': 'Extreme',
@@ -426,7 +426,7 @@ const translations: Translations = {
 
     // Catalog Page
     'catalog.title': 'Наша тщательно отобранная коллекция впечатлений',
-    'catalog.tab.cultural': 'Культурные',
+    'catalog.tab.cultural': 'Культура',
     'catalog.tab.sea': 'Море',
     'catalog.tab.adventure': 'Приключения',
     'catalog.tab.extreme': 'Экстрим',
