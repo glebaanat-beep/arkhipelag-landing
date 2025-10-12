@@ -148,6 +148,9 @@ const translations: Translations = {
     'cart.addOns': 'Selected Add-ons',
     'cart.grandTotal': 'Grand Total',
     'cart.checkout': 'Proceed to Checkout',
+
+    // Catalog Contact Block
+    'catalog.contact.message': 'If you haven\'t found a suitable service or need a custom solution - contact us on Telegram (@Arkhipelag_llc). We will prepare a personalized offer that meets your needs.',
     
     // Add-ons
     'addons.photographer': 'Professional Photographer',
@@ -533,6 +536,9 @@ const translations: Translations = {
     'cart.addOns': 'Выбранные дополнения',
     'cart.grandTotal': 'Общая сумма',
     'cart.checkout': 'Перейти к оформлению',
+
+    // Catalog Contact Block
+    'catalog.contact.message': 'Если вы не нашли подходящую услугу или вам требуется индивидуальное решение - свяжитесь с нами в Telegram (@Arkhipelag_llc). Мы подготовим персональное предложение, учитывающее ваши потребности.',
     
     // Add-ons
     'addons.photographer': 'Профессиональный фотограф',

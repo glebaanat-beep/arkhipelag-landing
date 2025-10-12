@@ -109,6 +109,17 @@ export default function ExperiencesCatalog() {
             </Tabs>
           </div>
         </section>
+
+        {/* Contact Block */}
+        <section className="py-20 md:py-24">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-text-secondary text-base md:text-lg leading-relaxed">
+                {t('catalog.contact.message')}
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
