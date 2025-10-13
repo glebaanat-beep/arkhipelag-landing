@@ -65,7 +65,11 @@ export const TravelEssentialCard: React.FC<TravelEssentialCardProps> = ({ essent
         <Button
           onClick={handleAddToCart}
           disabled={isAdded}
-          className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+          className={`w-full font-semibold transition-all duration-300 ${
+            isAdded 
+              ? 'bg-secondary text-secondary-foreground cursor-not-allowed' 
+              : 'bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground gold-shadow'
+          }`}
         >
           {isAdded 
             ? (language === 'en' ? 'Added to Cart' : 'Добавлено в корзину')
