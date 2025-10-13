@@ -14,6 +14,7 @@ interface TravelEssentialCardProps {
 export const TravelEssentialCard: React.FC<TravelEssentialCardProps> = ({ essential }) => {
   const { language } = useLanguage();
   const { addToCart } = useCart();
+  const [isAdded, setIsAdded] = React.useState(false);
 
   const IconComponent = Icons[essential.icon as keyof typeof Icons] as React.ComponentType<{ className?: string }>;
 
@@ -29,7 +30,11 @@ export const TravelEssentialCard: React.FC<TravelEssentialCardProps> = ({ essent
     };
 
     addToCart(service, []);
+    setIsAdded(true);
     toast.success(language === 'en' ? 'Added to cart!' : 'Добавлено в корзину!');
+    
+    // Reset after 2 seconds
+    setTimeout(() => setIsAdded(false), 2000);
   };
 
   const name = language === 'en' ? essential.name : essential.nameRu;
@@ -51,7 +56,7 @@ export const TravelEssentialCard: React.FC<TravelEssentialCardProps> = ({ essent
         </div>
         <div>
           <CardTitle className="text-lg leading-tight mb-2">{name}</CardTitle>
-          <CardDescription className="text-sm line-clamp-3">
+          <CardDescription className="text-sm leading-relaxed h-[4.5rem] overflow-hidden">
             {description}
           </CardDescription>
         </div>
@@ -59,9 +64,13 @@ export const TravelEssentialCard: React.FC<TravelEssentialCardProps> = ({ essent
       <CardContent className="mt-auto pt-0">
         <Button
           onClick={handleAddToCart}
-          className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow transition-all duration-300"
+          disabled={isAdded}
+          className="w-full bg-luxury-gold hover:bg-luxury-gold-bright text-primary-foreground font-semibold gold-shadow transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
         >
-          {language === 'en' ? 'Add to Cart' : 'Добавить в корзину'}
+          {isAdded 
+            ? (language === 'en' ? 'Added to Cart' : 'Добавлено в корзину')
+            : (language === 'en' ? 'Add to Cart' : 'Добавить в корзину')
+          }
         </Button>
       </CardContent>
     </Card>
