@@ -1,10 +1,16 @@
 import { useState } from 'react';
-import { Globe, Menu, X, ShoppingCart } from 'lucide-react';
+import { Globe, Menu, X, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu';
 export function Navigation() {
   const {
     language,
@@ -64,9 +70,23 @@ export function Navigation() {
             <button onClick={() => scrollToSection('process')} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
               {t('nav.process')}
             </button>
-            <button onClick={handleExperiencesClick} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
-              {t('nav.experiences')}
-            </button>
+            
+            {/* Collection Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-text-secondary hover:text-luxury-gold transition-colors duration-300 outline-none">
+                {language === 'en' ? 'Collection' : 'Коллекция'}
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                <DropdownMenuItem onClick={handleExperiencesClick} className="cursor-pointer">
+                  {t('nav.experiences')}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate('/collection/travel-essentials')} className="cursor-pointer">
+                  {language === 'en' ? 'Travel Essentials' : 'Туристические услуги'}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <button onClick={() => scrollToSection('contact')} className="text-text-secondary hover:text-luxury-gold transition-colors duration-300">
               {t('nav.contact')}
             </button>
@@ -179,9 +199,20 @@ export function Navigation() {
               <button onClick={() => scrollToSection('process')} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
                 {t('nav.process')}
               </button>
-              <button onClick={handleExperiencesClick} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
-                {t('nav.experiences')}
-              </button>
+              
+              {/* Collection submenu */}
+              <div className="border-l-2 border-luxury-gold/30 pl-4 space-y-2">
+                <div className="text-sm font-semibold text-luxury-gold mb-2">
+                  {language === 'en' ? 'Collection' : 'Коллекция'}
+                </div>
+                <button onClick={handleExperiencesClick} className="block text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
+                  {t('nav.experiences')}
+                </button>
+                <button onClick={() => { navigate('/collection/travel-essentials'); setIsOpen(false); }} className="block text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
+                  {language === 'en' ? 'Travel Essentials' : 'Туристические услуги'}
+                </button>
+              </div>
+              
               <button onClick={() => scrollToSection('contact')} className="text-left text-text-secondary hover:text-luxury-gold transition-colors duration-300">
                 {t('nav.contact')}
               </button>
