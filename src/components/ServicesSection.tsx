@@ -8,7 +8,6 @@ import realEstateImage from '../assets/real-estate.jpg';
 import shoppingConciergeImage from '../assets/shopping-concierge.jpg';
 import thaiTempleImage from '../assets/thai-temple.jpg';
 import exclusiveEventsImage from '../assets/exclusive-events.jpg';
-import motorbikeRentalImage from '../assets/motorbike-rental.jpg';
 
 interface Service {
   id: string;
@@ -23,12 +22,6 @@ const services: Service[] = [
     image: luxuryCarsImage,
     titleKey: 'services.car.title',
     descriptionKey: 'services.car.description',
-  },
-  {
-    id: 'motorbike',
-    image: motorbikeRentalImage,
-    titleKey: 'services.motorbike.title',
-    descriptionKey: 'services.motorbike.description',
   },
   {
     id: 'yacht',
