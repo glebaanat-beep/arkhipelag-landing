@@ -291,7 +291,7 @@ const Checkout = () => {
                     />
                     <label htmlFor="terms" className="text-sm text-text-primary cursor-pointer leading-relaxed">
                       {t('checkout.agreements.terms')}{' '}
-                      <a href="/terms-of-service" target="_blank" className="text-luxury-gold hover:underline">
+                      <a href="/tos.pdf" target="_blank" className="text-luxury-gold hover:underline">
                         {t('checkout.agreements.termsLink')}
                       </a>
                     </label>

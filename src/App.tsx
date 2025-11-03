@@ -8,6 +8,7 @@ import { CartProvider } from "./contexts/CartContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import ExperiencesCatalog from "./pages/ExperiencesCatalog";
 import TravelEssentials from "./pages/TravelEssentials";
 import Checkout from "./pages/Checkout";
@@ -26,6 +27,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/tos" element={<TermsOfService />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/experiences-catalog" element={<ExperiencesCatalog />} />
               <Route path="/collection/travel-essentials" element={<TravelEssentials />} />
               <Route path="/checkout" element={<Checkout />} />

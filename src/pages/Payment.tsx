@@ -200,8 +200,8 @@ const Payment = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-text-secondary">
             <div className="flex gap-4">
-              <a href="/terms-of-service" className="hover:text-luxury-gold transition-colors">
-                {language === 'en' ? 'Terms of Service' : 'Условия использования'}
+              <a href="/tos.pdf" className="hover:text-luxury-gold transition-colors">
+                {language === 'en' ? 'Terms of Service' : 'Условия обслуживания'}
               </a>
               <span>|</span>
               <a href="/privacy-policy.pdf" className="hover:text-luxury-gold transition-colors">
