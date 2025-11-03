@@ -11,6 +11,7 @@ const Payment = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [timeLeft, setTimeLeft] = useState(900); // 15 minutes in seconds
+  const [orderNumber] = useState(() => `A-${new Date().getFullYear()}-${Math.floor(Math.random() * 1000)}`);
 
   useEffect(() => {
     if (cart.length === 0) {
@@ -39,7 +40,6 @@ const Payment = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const orderNumber = `A-${new Date().getFullYear()}-${Math.floor(Math.random() * 1000)}`;
   const totalAmount = getTotalPrice();
 
   if (cart.length === 0) {
