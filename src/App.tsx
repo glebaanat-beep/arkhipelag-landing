@@ -11,6 +11,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ExperiencesCatalog from "./pages/ExperiencesCatalog";
 import TravelEssentials from "./pages/TravelEssentials";
 import Checkout from "./pages/Checkout";
+import Payment from "./pages/Payment";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/experiences-catalog" element={<ExperiencesCatalog />} />
               <Route path="/collection/travel-essentials" element={<TravelEssentials />} />
               <Route path="/checkout" element={<Checkout />} />
+              <Route path="/payment" element={<Payment />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

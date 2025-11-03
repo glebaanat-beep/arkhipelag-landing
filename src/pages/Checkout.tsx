@@ -67,8 +67,8 @@ const Checkout = () => {
 
   const handleSubmit = () => {
     if (isFormValid()) {
-      // Redirect to SBP payment gateway
-      window.location.href = 'https://sbp.nspk.ru/payment';
+      // Navigate to payment page
+      navigate('/payment');
     }
   };
 
