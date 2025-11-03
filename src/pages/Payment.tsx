@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useCart } from '@/contexts/CartContext';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import sbpLogo from '@/assets/sbp-logo.png';
 
 const Payment = () => {
   const { t, language } = useLanguage();
@@ -103,6 +104,9 @@ const Payment = () => {
           {/* SBP Payment Block */}
           <div className="bg-surface/30 border border-border/50 rounded-2xl p-4 sm:p-6 md:p-8 mb-6">
             <div className="text-center mb-6">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <img src={sbpLogo} alt="СБП" className="h-12 sm:h-16 w-auto" />
+              </div>
               <h2 className="text-xl font-semibold text-text-primary mb-2">
                 {language === 'en' 
                   ? 'Pay via Fast Payment System (SBP)' 
