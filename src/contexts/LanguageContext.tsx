@@ -629,7 +629,7 @@ const translations: Translations = {
     'catalog.tab.sea': 'Море',
     'catalog.tab.adventure': 'Приключения',
     'catalog.tab.extreme': 'Экстрим',
-    'catalog.tab.budget': 'Бюджет',
+    'catalog.tab.budget': 'Бюджетные',
     'catalog.bookNow': 'Забронировать',
     'catalog.contactToBook': 'Связаться для бронирования',
     'catalog.basePrice': 'Базовая цена',
