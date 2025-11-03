@@ -17,18 +17,17 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
         style={{ 
-          backgroundImage: `url(${heroImage})`,
-          backgroundAttachment: 'fixed'
+          backgroundImage: `url(${heroImage})`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background/80" />
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="font-heading text-6xl md:text-8xl font-bold mb-6 text-luxury-gradient">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 text-luxury-gradient">
           {t('hero.title')}
         </h1>
         

@@ -42,8 +42,8 @@ export function TestimonialsSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="testimonials" className="py-20 bg-surface">
-      <div className="container mx-auto px-6">
+    <section id="testimonials" className="py-12 sm:py-16 md:py-20 bg-surface">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-text-primary">
             {t('testimonials.title')}

@@ -3,8 +3,8 @@ import { Mail, Phone, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 export function ContactSection() {
   const { t } = useLanguage();
-  return <section id="contact" className="py-24 bg-background">
-      <div className="container mx-auto px-6 max-w-4xl">
+  return <section id="contact" className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-20">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-text-primary">
             {t('contact.title')}

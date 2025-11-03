@@ -81,30 +81,30 @@ const Checkout = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-6 py-24 md:py-32">
+      <main className="container mx-auto px-4 sm:px-6 py-20 sm:py-24 md:py-32">
         {/* Progress Indicator */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-4 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-luxury-gold text-background flex items-center justify-center">
-                <Check className="w-5 h-5" />
+          <div className="flex items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm overflow-x-auto pb-2">
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-luxury-gold text-background flex items-center justify-center">
+                <Check className="w-3 h-3 sm:w-5 sm:h-5" />
               </div>
-              <span className="text-text-primary font-medium">{t('checkout.progress.cart')}</span>
+              <span className="text-text-primary font-medium hidden sm:inline">{t('checkout.progress.cart')}</span>
             </div>
-            <div className="w-12 h-px bg-border"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-luxury-gold text-background flex items-center justify-center font-semibold">2</div>
-              <span className="text-luxury-gold font-medium">{t('checkout.progress.checkout')}</span>
+            <div className="w-6 sm:w-12 h-px bg-border flex-shrink-0"></div>
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-luxury-gold text-background flex items-center justify-center font-semibold text-xs sm:text-base">2</div>
+              <span className="text-luxury-gold font-medium hidden sm:inline">{t('checkout.progress.checkout')}</span>
             </div>
-            <div className="w-12 h-px bg-border"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-surface border border-border text-text-secondary flex items-center justify-center">3</div>
-              <span className="text-text-secondary">{t('checkout.progress.payment')}</span>
+            <div className="w-6 sm:w-12 h-px bg-border flex-shrink-0"></div>
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-surface border border-border text-text-secondary flex items-center justify-center text-xs sm:text-base">3</div>
+              <span className="text-text-secondary hidden sm:inline">{t('checkout.progress.payment')}</span>
             </div>
-            <div className="w-12 h-px bg-border"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-surface border border-border text-text-secondary flex items-center justify-center">4</div>
-              <span className="text-text-secondary">{t('checkout.progress.confirmation')}</span>
+            <div className="w-6 sm:w-12 h-px bg-border flex-shrink-0"></div>
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-surface border border-border text-text-secondary flex items-center justify-center text-xs sm:text-base">4</div>
+              <span className="text-text-secondary hidden sm:inline">{t('checkout.progress.confirmation')}</span>
             </div>
           </div>
         </div>

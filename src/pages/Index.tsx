@@ -37,8 +37,8 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-surface border-t border-border py-12">
-        <div className="container mx-auto px-6">
+      <footer className="bg-surface border-t border-border py-8 sm:py-12">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <div className="font-heading text-2xl font-bold text-luxury-gradient mb-4">
               ARKHIPELAG

@@ -54,8 +54,8 @@ export function CuratedExperiencesSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-luxury-gradient mb-6">

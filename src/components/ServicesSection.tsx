@@ -60,8 +60,8 @@ export function ServicesSection() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-text-primary">
             {t('services.title')}
@@ -71,12 +71,13 @@ export function ServicesSection() {
         
         {/* Service Tabs */}
         <div className="mb-12">
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {/* Service Tabs */}
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8">
             {services.map((service, index) => (
               <button
                 key={service.id}
                 onClick={() => setActiveService(index)}
-                className={`px-6 py-3 rounded-lg transition-all duration-300 font-medium ${
+                className={`px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg transition-all duration-300 font-medium text-sm sm:text-base ${
                   activeService === index
                     ? 'bg-luxury-gold text-background gold-shadow'
                     : 'bg-card hover:bg-card-elevated text-text-secondary hover:text-text-primary'
@@ -101,7 +102,7 @@ export function ServicesSection() {
               </div>
               
               {/* Content Side */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center">
                 <h3 className="font-heading text-2xl md:text-3xl font-bold mb-6 text-luxury-gold">
                   {t(services[activeService].titleKey)}
                 </h3>

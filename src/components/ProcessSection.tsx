@@ -25,8 +25,8 @@ export function ProcessSection() {
   const {
     t
   } = useLanguage();
-  return <section id="process" className="py-20 bg-surface">
-      <div className="container mx-auto px-6">
+  return <section id="process" className="py-12 sm:py-16 md:py-20 bg-surface">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-text-primary">
             {t('process.title')}

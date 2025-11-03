@@ -38,8 +38,8 @@ export default function ExperiencesCatalog() {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-b from-surface to-background">
-          <div className="container mx-auto px-6 text-center">
+        <section className="py-12 sm:py-14 md:py-16 bg-gradient-to-b from-surface to-background">
+          <div className="container mx-auto px-4 sm:px-6 text-center">
             <h1 className="font-heading text-4xl md:text-6xl font-bold text-luxury-gradient mb-6">
               {t('catalog.title')}
             </h1>
@@ -50,37 +50,37 @@ export default function ExperiencesCatalog() {
         </section>
 
         {/* Catalog Content */}
-        <section className="py-16">
-          <div className="container mx-auto px-6">
+        <section className="py-8 sm:py-12 md:py-16">
+          <div className="container mx-auto px-4 sm:px-6">
             <Tabs defaultValue="cultural" className="w-full">
-              <TabsList className="flex flex-wrap justify-center gap-2 mb-12 bg-transparent p-0 h-auto">
+              <TabsList className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-10 md:mb-12 bg-transparent p-0 h-auto">
                 <TabsTrigger 
                   value="cultural" 
-                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-2.5 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[100px] sm:min-w-[120px] text-center text-sm sm:text-base"
                 >
                   {t('catalog.tab.cultural')}
                 </TabsTrigger>
                 <TabsTrigger 
                   value="sea" 
-                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-2.5 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[100px] sm:min-w-[120px] text-center text-sm sm:text-base"
                 >
                   {t('catalog.tab.sea')}
                 </TabsTrigger>
                 <TabsTrigger 
                   value="adventure" 
-                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-2.5 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[100px] sm:min-w-[120px] text-center text-sm sm:text-base"
                 >
                   {t('catalog.tab.adventure')}
                 </TabsTrigger>
                 <TabsTrigger 
                   value="extreme" 
-                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-2.5 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[100px] sm:min-w-[120px] text-center text-sm sm:text-base"
                 >
                   {t('catalog.tab.extreme')}
                 </TabsTrigger>
                 <TabsTrigger 
                   value="budget" 
-                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-2.5 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[100px] sm:min-w-[120px] text-center text-sm sm:text-base"
                 >
                   {t('catalog.tab.budget')}
                 </TabsTrigger>

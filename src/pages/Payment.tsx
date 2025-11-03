@@ -63,12 +63,12 @@ const Payment = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="max-w-2xl mx-auto">
           {/* Order Details */}
-          <div className="bg-surface/30 border border-border/50 rounded-2xl p-8 mb-6">
+          <div className="bg-surface/30 border border-border/50 rounded-2xl p-4 sm:p-6 md:p-8 mb-6">
             <div className="text-center mb-8">
-              <div className="text-5xl font-bold text-luxury-gold mb-2">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-luxury-gold mb-2">
                 {totalAmount.toLocaleString()} ฿
               </div>
               <div className="text-text-secondary">
@@ -101,7 +101,7 @@ const Payment = () => {
           </div>
 
           {/* SBP Payment Block */}
-          <div className="bg-surface/30 border border-border/50 rounded-2xl p-8 mb-6">
+          <div className="bg-surface/30 border border-border/50 rounded-2xl p-4 sm:p-6 md:p-8 mb-6">
             <div className="text-center mb-6">
               <h2 className="text-xl font-semibold text-text-primary mb-2">
                 {language === 'en' 
@@ -117,10 +117,10 @@ const Payment = () => {
 
             {/* QR Code Placeholder */}
             <div className="flex justify-center mb-6">
-              <div className="w-64 h-64 bg-white rounded-xl flex items-center justify-center border-2 border-border">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl flex items-center justify-center border-2 border-border">
                 <div className="text-center">
-                  <div className="w-48 h-48 bg-gradient-to-br from-luxury-gold/20 to-luxury-gold/5 rounded-lg flex items-center justify-center mb-2">
-                    <span className="text-6xl">QR</span>
+                  <div className="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-gradient-to-br from-luxury-gold/20 to-luxury-gold/5 rounded-lg flex items-center justify-center mb-2">
+                    <span className="text-4xl sm:text-5xl md:text-6xl">QR</span>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Payment = () => {
           </div>
 
           {/* Legal Block - Payment Agent Information */}
-          <div className="bg-muted/30 border border-border/30 rounded-xl p-6 mb-6" style={{ fontSize: '0.85rem' }}>
+          <div className="bg-muted/30 border border-border/30 rounded-xl p-4 sm:p-6 mb-6 text-xs sm:text-sm">
             <div className="text-text-secondary leading-relaxed space-y-3">
               <div className="font-semibold text-text-primary">
                 {language === 'en' ? 'Payment Agent: SOLUTEX LLC' : 'Платежный агент: ООО «СОЛЮТЕКС»'}
@@ -167,7 +167,7 @@ const Payment = () => {
           </div>
 
           {/* Post-Payment Information */}
-          <div className="bg-surface/30 border border-border/50 rounded-2xl p-6 mb-6">
+          <div className="bg-surface/30 border border-border/50 rounded-2xl p-4 sm:p-6 mb-6">
             <div className="space-y-3 text-sm text-text-secondary text-center">
               <p>
                 {language === 'en'
@@ -196,9 +196,9 @@ const Payment = () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border/50 bg-surface/30 py-6 mt-12">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-text-secondary">
+      <footer className="border-t border-border/50 bg-surface/30 py-4 sm:py-6 mt-12">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-text-secondary">
             <div className="flex gap-4">
               <a href="/terms-of-service" className="hover:text-luxury-gold transition-colors">
                 {language === 'en' ? 'Terms of Service' : 'Условия использования'}
