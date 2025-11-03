@@ -109,7 +109,7 @@ const translations: Translations = {
     'testimonials.3.title': 'Investment Banker',
     'testimonials.4.text': 'Discretion and excellence define ARKHIPELAG. They handled our high-profile event with such professionalism that our guests are still talking about it months later. Simply unparalleled service.',
     'testimonials.4.name': 'Sofia Martinelli',
-    'testimonials.4.title': 'Fashion Executive',
+    'testimonials.4.title': 'Modeling Agency Executive',
     
     // Curated Experiences section
     'experiences.title': 'Curated Experiences',
@@ -605,7 +605,7 @@ const translations: Translations = {
     'testimonials.3.title': 'Инвестиционный банкир',
     'testimonials.4.text': 'Дискретность и совершенство определяют ARKHIPELAG. Они провели наше высокопрофильное мероприятие с таким профессионализмом, что наши гости все еще говорят о нем спустя месяцы. Просто непревзойденный сервис.',
     'testimonials.4.name': 'София Мартинелли',
-    'testimonials.4.title': 'Руководитель модного бизнеса',
+    'testimonials.4.title': 'Руководитель модельного бизнеса',
     
     // Curated Experiences section
     'experiences.title': 'Тщательно отобранные впечатления',
