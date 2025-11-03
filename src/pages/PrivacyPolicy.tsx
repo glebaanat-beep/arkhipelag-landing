@@ -5,8 +5,8 @@ const PrivacyPolicy = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Redirect to the PDF file
-    window.location.href = '/privacy-policy.pdf';
+    // Redirect to the PDF file with cache-busting parameter
+    window.location.href = `/privacy-policy.pdf?v=${Date.now()}`;
   }, []);
 
   return (

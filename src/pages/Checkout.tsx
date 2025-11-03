@@ -277,7 +277,7 @@ const Checkout = () => {
                     />
                     <label htmlFor="privacy" className="text-sm text-text-primary cursor-pointer leading-relaxed">
                       {t('checkout.agreements.privacy')}{' '}
-                      <a href="/privacy-policy.pdf" className="text-luxury-gold hover:underline">
+                      <a href={`/privacy-policy.pdf?v=${Date.now()}`} className="text-luxury-gold hover:underline">
                         {t('checkout.agreements.privacyLink')}
                       </a>
                     </label>
