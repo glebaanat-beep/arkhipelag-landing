@@ -59,7 +59,6 @@ const Payment = () => {
                 {language === 'en' ? 'Payment' : 'Оплата'}
               </span>
             </div>
-            <div className="text-sm text-text-secondary">arkhipelag.com</div>
           </div>
         </div>
       </header>
