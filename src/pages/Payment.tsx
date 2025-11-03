@@ -49,11 +49,11 @@ const Payment = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border/50 bg-surface/30">
+      <header className="border-b border-border/50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <h1 className="text-2xl font-bold gradient-gold">ARKHIPELAG</h1>
+              <h1 className="font-heading text-2xl font-bold text-luxury-gradient">ARKHIPELAG</h1>
               <span className="text-text-secondary">|</span>
               <span className="text-text-primary font-medium">
                 {language === 'en' ? 'Payment' : 'Оплата'}
