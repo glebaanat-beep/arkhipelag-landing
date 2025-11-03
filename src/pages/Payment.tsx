@@ -204,7 +204,7 @@ const Payment = () => {
                 {language === 'en' ? 'Terms of Service' : 'Условия использования'}
               </a>
               <span>|</span>
-              <a href={`/privacy-policy.pdf?v=${Date.now()}`} className="hover:text-luxury-gold transition-colors">
+              <a href="/privacy-policy.pdf" className="hover:text-luxury-gold transition-colors">
                 {language === 'en' ? 'Privacy Policy' : 'Политика конфиденциальности'}
               </a>
             </div>
