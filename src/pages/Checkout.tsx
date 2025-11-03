@@ -14,6 +14,7 @@ import { CalendarIcon, Check, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 import { Navigation } from '@/components/Navigation';
+import sbpLogo from '@/assets/sbp-logo.png';
 
 const Checkout = () => {
   const { t } = useLanguage();
@@ -251,8 +252,8 @@ const Checkout = () => {
                 
                 <div className="border-2 border-luxury-gold/50 rounded-xl p-4 bg-luxury-gold/5">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-luxury-gold/20 rounded-lg flex items-center justify-center">
-                      <span className="text-luxury-gold font-bold text-xl">₽</span>
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={sbpLogo} alt="SBP" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <div className="font-semibold text-text-primary">{t('checkout.payment.sbp')}</div>
