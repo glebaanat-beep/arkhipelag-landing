@@ -25,7 +25,7 @@ export function ContactSection() {
                 </div>
                 <div className="text-left flex-1">
                   <p className="text-text-muted text-base mb-2">{t('contact.info.email')}</p>
-                  <p className="text-text-primary font-semibold text-xl">arkhipelagllc@gmail.com</p>
+                  <p className="text-text-primary font-semibold text-xl">support@arkhipelag.com</p>
                 </div>
               </div>
               

@@ -502,7 +502,7 @@ const translations: Translations = {
     
     'privacyPolicy.section9.title': '9. Operator Contact Information',
     'privacyPolicy.section9.intro': '9.1. All suggestions, requests, demands or questions related to personal data processing and exercise of rights can be sent by the User to the Operator:',
-    'privacyPolicy.section9.email': 'By email: arkhipelagllc@gmail.com',
+    'privacyPolicy.section9.email': 'By email: support@arkhipelag.com',
     'privacyPolicy.section9.address': 'By postal address: 3250/19, Villa 1 Thep Krasat Tri-Nai Yang Rd, Phuket, Thailand, 83110',
     'privacyPolicy.section9.response': '9.2. The Operator undertakes to consider any User inquiry and send a response to the specified email address within reasonable time.',
     
@@ -998,7 +998,7 @@ const translations: Translations = {
     
     'privacyPolicy.section9.title': '9. Контактная информация Оператора',
     'privacyPolicy.section9.intro': '9.1. Все предложения, запросы, требования или вопросы, связанные с обработкой персональных данных и реализацией своих прав, Пользователь может направлять Оператору:',
-    'privacyPolicy.section9.email': 'По электронной почте: arkhipelagllc@gmail.com',
+    'privacyPolicy.section9.email': 'По электронной почте: support@arkhipelag.com',
     'privacyPolicy.section9.address': 'По почтовому адресу: 3250/19 , Villa 1 Thep Krasat Tri-Nai Yang Rd, Пхукет, Тайланд, 83110',
     'privacyPolicy.section9.response': '9.2. Оператор обязуется рассмотреть любое обращение Пользователя и направить ответ на указанный им адрес электронной почты в разумные сроки.',
     
