@@ -176,4 +176,102 @@ export const servicesData: Service[] = [
       { id: 'wingabyss-membership', titleKey: 'addons.extreme.wingabyss.membership.title', price: 155000 },
     ]
   },
+
+  // Budget Experiences
+  {
+    id: 'budget-scooter',
+    titleKey: 'catalog.budget.scooter.title',
+    descriptionKey: 'catalog.budget.scooter.description',
+    basePrice: 800,
+    category: 'budget',
+    addOns: [
+      { id: 'scooter-helmet', titleKey: 'addons.budget.scooter.helmet.title', price: 200 },
+      { id: 'scooter-gps', titleKey: 'addons.budget.scooter.gps.title', price: 300 },
+      { id: 'scooter-insurance', titleKey: 'addons.budget.scooter.insurance.title', price: 400 },
+    ]
+  },
+  {
+    id: 'budget-motorcycle',
+    titleKey: 'catalog.budget.motorcycle.title',
+    descriptionKey: 'catalog.budget.motorcycle.description',
+    basePrice: 3500,
+    category: 'budget',
+    addOns: [
+      { id: 'motorcycle-gear', titleKey: 'addons.budget.motorcycle.gear.title', price: 1000 },
+      { id: 'motorcycle-luggage', titleKey: 'addons.budget.motorcycle.luggage.title', price: 800 },
+      { id: 'motorcycle-tracker', titleKey: 'addons.budget.motorcycle.tracker.title', price: 500 },
+    ]
+  },
+  {
+    id: 'budget-biketour',
+    titleKey: 'catalog.budget.biketour.title',
+    descriptionKey: 'catalog.budget.biketour.description',
+    basePrice: 4500,
+    category: 'budget',
+    addOns: [
+      { id: 'biketour-seafood', titleKey: 'addons.budget.biketour.seafood.title', price: 600 },
+      { id: 'biketour-gopro', titleKey: 'addons.budget.biketour.gopro.title', price: 1200 },
+      { id: 'biketour-transfer', titleKey: 'addons.budget.biketour.transfer.title', price: 400 },
+    ]
+  },
+  {
+    id: 'budget-templetour',
+    titleKey: 'catalog.budget.templetour.title',
+    descriptionKey: 'catalog.budget.templetour.description',
+    basePrice: 1800,
+    category: 'budget',
+    addOns: [
+      { id: 'templetour-lunch', titleKey: 'addons.budget.templetour.lunch.title', price: 400 },
+      { id: 'templetour-photo', titleKey: 'addons.budget.templetour.photo.title', price: 800 },
+      { id: 'templetour-transfer', titleKey: 'addons.budget.templetour.transfer.title', price: 600 },
+    ]
+  },
+  {
+    id: 'budget-island',
+    titleKey: 'catalog.budget.island.title',
+    descriptionKey: 'catalog.budget.island.description',
+    basePrice: 2500,
+    category: 'budget',
+    addOns: [
+      { id: 'island-snorkel', titleKey: 'addons.budget.island.snorkel.title', price: 600 },
+      { id: 'island-bbq', titleKey: 'addons.budget.island.bbq.title', price: 500 },
+      { id: 'island-gopro', titleKey: 'addons.budget.island.gopro.title', price: 800 },
+    ]
+  },
+  {
+    id: 'budget-cooking',
+    titleKey: 'catalog.budget.cooking.title',
+    descriptionKey: 'catalog.budget.cooking.description',
+    basePrice: 2200,
+    category: 'budget',
+    addOns: [
+      { id: 'cooking-market', titleKey: 'addons.budget.cooking.market.title', price: 500 },
+      { id: 'cooking-book', titleKey: 'addons.budget.cooking.book.title', price: 300 },
+      { id: 'cooking-transport', titleKey: 'addons.budget.cooking.transport.title', price: 600 },
+    ]
+  },
+  {
+    id: 'budget-snorkeling',
+    titleKey: 'catalog.budget.snorkeling.title',
+    descriptionKey: 'catalog.budget.snorkeling.description',
+    basePrice: 1500,
+    category: 'budget',
+    addOns: [
+      { id: 'snorkeling-gear', titleKey: 'addons.budget.snorkeling.gear.title', price: 400 },
+      { id: 'snorkeling-photo', titleKey: 'addons.budget.snorkeling.photo.title', price: 700 },
+      { id: 'snorkeling-instructor', titleKey: 'addons.budget.snorkeling.instructor.title', price: 900 },
+    ]
+  },
+  {
+    id: 'budget-foodtour',
+    titleKey: 'catalog.budget.foodtour.title',
+    descriptionKey: 'catalog.budget.foodtour.description',
+    basePrice: 1200,
+    category: 'budget',
+    addOns: [
+      { id: 'foodtour-extra', titleKey: 'addons.budget.foodtour.extra.title', price: 500 },
+      { id: 'foodtour-private', titleKey: 'addons.budget.foodtour.private.title', price: 600 },
+      { id: 'foodtour-transport', titleKey: 'addons.budget.foodtour.transport.title', price: 400 },
+    ]
+  },
 ];

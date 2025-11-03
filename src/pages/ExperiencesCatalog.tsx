@@ -13,7 +13,7 @@ export default function ExperiencesCatalog() {
     const hash = window.location.hash;
     if (hash) {
       const tabId = hash.substring(1);
-      const tabs = ['cultural', 'sea', 'adventure', 'extreme'];
+      const tabs = ['cultural', 'sea', 'adventure', 'extreme', 'budget'];
       if (tabs.includes(tabId)) {
         setTimeout(() => {
           const tabElement = document.querySelector(`[data-state="active"]`);
@@ -30,6 +30,7 @@ export default function ExperiencesCatalog() {
   const seaServices = servicesData.filter(s => s.category === 'sea');
   const adventureServices = servicesData.filter(s => s.category === 'adventure');
   const extremeServices = servicesData.filter(s => s.category === 'extreme');
+  const budgetServices = servicesData.filter(s => s.category === 'budget');
 
   return (
     <div className="min-h-screen bg-background">
@@ -77,6 +78,12 @@ export default function ExperiencesCatalog() {
                 >
                   {t('catalog.tab.extreme')}
                 </TabsTrigger>
+                <TabsTrigger 
+                  value="budget" 
+                  className="relative bg-surface/80 backdrop-blur-sm border border-border/50 hover:border-luxury-gold/30 text-text-primary font-medium py-4 px-8 rounded-2xl data-[state=active]:bg-luxury-gold data-[state=active]:text-primary-foreground data-[state=active]:border-luxury-gold data-[state=active]:shadow-lg transition-all duration-300 hover:shadow-md hover:scale-105 min-w-[120px] text-center"
+                >
+                  {t('catalog.tab.budget')}
+                </TabsTrigger>
               </TabsList>
 
               {/* Cultural Tab */}
@@ -103,6 +110,13 @@ export default function ExperiencesCatalog() {
               {/* Extreme Tab */}
               <TabsContent value="extreme" id="extreme" className="space-y-6">
                 {extremeServices.map((service) => (
+                  <ServiceCard key={service.id} service={service} />
+                ))}
+              </TabsContent>
+
+              {/* Budget Tab */}
+              <TabsContent value="budget" id="budget" className="space-y-6">
+                {budgetServices.map((service) => (
                   <ServiceCard key={service.id} service={service} />
                 ))}
               </TabsContent>

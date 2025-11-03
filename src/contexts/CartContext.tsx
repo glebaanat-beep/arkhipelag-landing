@@ -11,7 +11,7 @@ export interface Service {
   titleKey: string;
   descriptionKey: string;
   basePrice: number;
-  category: 'cultural' | 'sea' | 'adventure' | 'extreme';
+  category: 'cultural' | 'sea' | 'adventure' | 'extreme' | 'budget';
   addOns: AddOn[];
 }
 
