@@ -5,9 +5,11 @@ const TermsOfService = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Redirect to the PDF file
-    window.location.href = '/tos.pdf';
-  }, []);
+    // Open PDF in new tab
+    window.open('/tos.pdf', '_blank');
+    // Navigate back to home
+    navigate('/');
+  }, [navigate]);
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
