@@ -146,8 +146,8 @@ const Payment = () => {
               
               <p>
                 {language === 'en'
-                  ? 'Payment for Arkhipelag services is processed by our official payment agent - SOLUTEX LLC (ООО «Солютекс»).'
-                  : 'Оплата услуг Arkhipelag обрабатывается нашим официальным платежным агентом - ООО «Солютекс» (SOLUTEX LLC).'}
+                  ? 'Payment for Arkhipelag services is processed by our official payment agent - SOLUTEX LLC, Tax ID: 9909711209 (ООО «Солютекс»).'
+                  : 'Оплата услуг Arkhipelag обрабатывается нашим официальным платежным агентом - ООО «Солютекс», ИНН: 9909711209 (SOLUTEX LLC).'}
               </p>
               
               <p>
