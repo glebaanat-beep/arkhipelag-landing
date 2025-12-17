@@ -46,9 +46,8 @@ const Index = () => {
             
             {/* Tax ID and Address Information */}
             <div className="text-text-muted text-sm max-w-2xl mx-auto space-y-2">
-              <p><span className="font-medium">Tax ID:</span> 0835566018842</p>
-              <p><span className="font-medium">Address:</span> 63/202 Moo 2, Thepkasattri Rd, Muang Phuket District, Phuket 83000, Thailand</p>
-              <p><span className="font-medium">Payment Agent:</span> SOLUTEX LLC (OOO "Солютекс") Tax ID: 9909711209</p>
+              <p><span className="font-medium">Service provider:</span> ARKHIPELAG LC, Tax ID: 0835566018842, Address: 63/202 Moo 2, Thepkasattri Rd, Muang Phuket District, Phuket 83000, Thailand</p>
+              <p><span className="font-medium">Payment Agent:</span> SOLUTEX LLC, Tax ID: 9909711209, Address: Bishkek, Pervomaisky District, 16 Ch. Aytmatov Ave., Apt. 68</p>
             </div>
           </div>
           
