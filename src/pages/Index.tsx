@@ -51,7 +51,15 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="text-center pt-8 border-t border-border">
+          <div className="text-center pt-8 border-t border-border space-y-4">
+            <div className="flex justify-center gap-6 text-sm">
+              <a href="/privacy-policy.pdf" target="_blank" className="text-text-muted hover:text-luxury-gold transition-colors">
+                Политика конфиденциальности
+              </a>
+              <a href="/tos.pdf" target="_blank" className="text-text-muted hover:text-luxury-gold transition-colors">
+                Условия обслуживания
+              </a>
+            </div>
             <p className="text-text-muted">
               © 2024 ARKHIPELAG. All rights reserved.
             </p>
